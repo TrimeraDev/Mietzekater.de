@@ -101,7 +101,7 @@
 
     <section id="vermieten" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Verdiene mit deinen Werkzeugen</h2>
+            <h2 class="text-center mb-5 text-dark">Verdiene mit deinen Werkzeugen</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card">
@@ -165,24 +165,24 @@
 
     <section id="newsletter" class="py-5">
         <div class="container">
+            <h2 class="text-center mb-5">Mach mit!</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <div class="card p-4">
+                    <div class="custom-dark-card">
                         <h3 class="mb-4">Sei von Anfang an dabei!</h3>
                         <form id="signup-form">
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-Mail-Adresse</label>
-                                <input type="email" class="form-control" id="email" placeholder="Deine E-Mail-Adresse" required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="beta-tester">
+                                <input type="checkbox" class="form-check-input" id="beta-tester" name="beta-tester">
                                 <label class="form-check-label" for="beta-tester">Ich möchte Beta-Tester werden</label>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="newsletter">
+                                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
                                 <label class="form-check-label" for="newsletter">Ich möchte den Newsletter erhalten</label>
                             </div>
-           
                             <button type="submit" class="btn btn-primary w-100">Benachrichtige mich beim Launch</button>
                         </form>
                     </div>
@@ -203,5 +203,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="newsletter.js"></script>
 </body>
 </html>
