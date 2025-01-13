@@ -304,8 +304,8 @@ body {
 }
 
 .custom-dark-card .form-check-input:checked {
-    background-color: var(--primary-green);
-    border-color: var(--primary-green);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
 }
 
 .btn-primary {
