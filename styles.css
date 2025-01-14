@@ -48,7 +48,7 @@ body {
     height: 200%;
     background: radial-gradient(
         circle at 70% 50%, 
-        rgba(152, 197, 95, 0.2) 0%, 
+        rgba(152, 197, 95, 0.4) 0%, 
         rgba(152, 197, 95, 0.05) 50%, 
         transparent 70%
     );
@@ -413,8 +413,41 @@ section {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     background-color: var(--background-dark) !important;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+    background-color: var(--background-dark);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.cta-nav-item .nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--primary-light);
+    color: var(--primary-light);
+    transition: all 0.3s ease;
+}
+
+.navbar .cta-nav-item .nav-link {
+    background-color: transparent;
+}
+
+.navbar.scrolled .cta-nav-item .nav-link {
+    background-color: var(--primary-green);
+    color: white !important;
+    border: 1px solid var(--primary-green);
+}
+
+.navbar.scrolled .cta-nav-item .nav-link:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: scale(1.05);
 }
 
 .navbar-light .navbar-nav .nav-link {
