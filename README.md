@@ -1,4 +1,6 @@
 # Mietzekater Landingpage
+https://www.mietzekater.de
+https://www.mietzekater.com
 
 ## Projektbeschreibung
 Mietzekater ist eine Plattform zum lokalen Verleih von Artikeln wie Bohrmaschinen, Biertischen und mehr.
