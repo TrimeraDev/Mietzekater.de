@@ -97,8 +97,9 @@ body {
 
 .hero-image {
     position: relative;
-    z-index: 2;
-    max-width: 100%;
+    z-index: 1;
+    max-width: 110%;
+    transform: scale(1.1);
     height: auto;
 }
 
@@ -108,7 +109,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 2;
 }
 
 .floating-icon {
@@ -143,16 +144,16 @@ body {
 /* Position icons along a vertical ellipse around the phone */
 .floating-icon:nth-child(1) { 
     top: calc(40% + 300px * sin(0 * 2 * 3.14159 / 11)); 
-    left: calc(50% + 300px * cos(0 * 2 * 3.14159 / 11) - 50%); 
+    left: calc(50% + 330px * cos(0 * 2 * 3.14159 / 11) - 50%); 
     animation-delay: 0s; 
 }
 .floating-icon:nth-child(2) { 
-    top: calc(40% + 300px * sin(1 * 2 * 3.14159 / 11)); 
-    right: calc(50% + 350px * cos(1 * 2 * 3.14159 / 11) - 50%); 
+    top: calc(40% + 250px * sin(1 * 2 * 3.14159 / 11)); 
+    right: calc(50% + 370px * cos(1 * 2 * 3.14159 / 11) - 50%); 
     animation-delay: -2s; 
 }
 .floating-icon:nth-child(3) { 
-    top: calc(40% + 270px * sin(2 * 2 * 3.14159 / 11)); 
+    top: calc(40% + 350px * sin(2 * 2 * 3.14159 / 11)); 
     left: calc(50% + 110px * cos(2 * 2 * 3.14159 / 11) - 50%); 
     animation-delay: -4s; 
 }
@@ -193,7 +194,7 @@ body {
 }
 .floating-icon:nth-child(11) { 
     top: calc(50% + 200px * sin(10 * 2 * 3.14159 / 11)); 
-    left: calc(50% + 150px * cos(10 * 2 * 3.14159 / 11) - 50%); 
+    left: calc(50% + 0px * cos(10 * 2 * 3.14159 / 11) - 50%); 
     animation-delay: -20s; 
 }
 
