@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/MietzekaterIconTransparent.webp" alt="Mietzekater Logo" height="50">
-                <span class="ms-2">Mietzekater  -  Gemeinsam Mieten</span>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/MietzekaterIconTransparent.webp" alt="Mietzekater Logo" class="logo-img" style="height: 40px; width: auto;">
+                <span class="ms-2 d-none d-sm-inline">Mietzekater  -  Gemeinsam Mieten</span>
+                <span class="ms-2 d-sm-none">Mietzekater</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -28,48 +29,45 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#mieten">Mieten</a>
+                        <a class="nav-link px-3" href="#mieten">Mieten</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#vermieten">Vermieten</a>
+                        <a class="nav-link px-3" href="#vermieten">Vermieten</a>
                     </li>
                     <li class="nav-item cta-nav-item">
-                        <a class="nav-link btn btn-outline-light" href="#newsletter">Mitmachen</a>
+                        <a class="nav-link btn btn-outline-light px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="hero text-white">
+    <section class="hero text-white position-relative">
         <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content">
-                    <h1 class="hero-title">Miete was du brauchst - Einfach aus deiner Nachbarschaft</h1>
-                    <p class="hero-subtitle">Spare Geld und Platz: Finde Werkzeuge in deiner Nähe oder verdiene Geld durch das Verleihen deiner eigenen Geräte.</p>
-                    <div class="hero-features">
-                        <div class="feature-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>📍 In deiner Nähe</span>
+        <div class="container py-5">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6 hero-content position-relative">
+                    <h1 class="hero-title display-4 fw-bold mb-4">Miete was du brauchst - Einfach aus deiner Nachbarschaft</h1>
+                    <p class="hero-subtitle fs-5 mb-4">Spare Geld und Platz: Teile, leihe und entdecke - Gemeinsam nutzen, statt verstauben lassen.</p>
+                    <div class="hero-features d-flex flex-wrap gap-3 mb-4">
+                        <div class="feature-item d-flex align-items-center h-100 p-2">
+                            <span class="flex-grow-1 text-center">📍 In deiner Nähe</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-shield-alt"></i>
-                            <span>🔒 Sicher & Versichert</span>
+                        <div class="feature-item d-flex align-items-center h-100 p-2">
+                            <span class="flex-grow-1 text-center">🔒 Sicher & Versichert</span>
                         </div>
-                        <div class="feature-item">
-                            <i class="fas fa-euro-sign"></i>
-                            <span>💲 Günstig leihen</span>
+                        <div class="feature-item d-flex align-items-center h-100 p-2">
+                            <span class="flex-grow-1 text-center">💲 Günstig leihen</span>
                         </div>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="#newsletter" class="btn btn-primary btn-lg">App vormerken</a>
-                        <a href="#vermieten" class="btn btn-outline-light btn-lg">So funktioniert's</a>
+                    <div class="hero-buttons d-flex flex-wrap gap-3">
+                        <a href="#newsletter" class="btn btn-primary btn-lg px-4">App vormerken</a>
+                        <a href="#vermieten" class="btn btn-outline-light btn-lg px-4">So funktioniert's</a>
                     </div>
                 </div>
                 <div class="col-lg-6 hero-app">
-                    <div class="app-mockup-container">
-                        <img src="assets/MietzekaterAppHome.png" alt="Mietzekater App Mockup" class="hero-app-mockup">
-                        <div class="mockup-badge">
+                    <div class="app-mockup-container text-center">
+                        <img src="assets/MietzekaterAppHome.png" alt="Mietzekater App Mockup" class="hero-app-mockup img-fluid" style="max-width: 80%; height: auto;">
+                        <div class="mockup-badge position-absolute">
                             <span class="badge-label">Bald verfügbar</span>
                         </div>
                     </div>
@@ -83,24 +81,24 @@
             <h2 class="text-center mb-5">Einfach & sicher mieten</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Sicher & Versichert</h3>
-                        <p>Alle Vermietungen sind automatisch versichert. Deine Zahlungen werden sicher über unsere Plattform abgewickelt.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">🔒</div>
+                        <h3 class="mb-3">Sicher & Versichert</h3>
+                        <p class="mb-0">Alle Vermietungen sind automatisch versichert. Deine Zahlungen werden sicher über unsere Plattform abgewickelt.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">📍</div>
-                        <h3>Lokal verfügbar</h3>
-                        <p>Finde Werkzeuge und Geräte direkt in deiner Nachbarschaft. Spare Zeit und Transportwege.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">📍</div>
+                        <h3 class="mb-3">Lokal verfügbar</h3>
+                        <p class="mb-0">Finde Werkzeuge und Geräte direkt in deiner Nachbarschaft. Spare Zeit und Transportwege.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">💰</div>
-                        <h3>Günstig leihen</h3>
-                        <p>Warum teuer kaufen? Miete nur dann, wenn du etwas wirklich brauchst und spare Geld.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">💰</div>
+                        <h3 class="mb-3">Günstig leihen</h3>
+                        <p class="mb-0">Warum teuer kaufen? Miete nur dann, wenn du etwas wirklich brauchst und spare Geld.</p>
                     </div>
                 </div>
             </div>
@@ -112,24 +110,24 @@
             <h2 class="text-center mb-5 text-dark">Verdiene mit deinen Werkzeugen</h2>
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">✨</div>
-                        <h3>Passives Einkommen</h3>
-                        <p>Verdiene Geld mit Werkzeugen, die du nur selten nutzt. Deine Geräte arbeiten für dich.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">✨</div>
+                        <h3 class="mb-3">Passives Einkommen</h3>
+                        <p class="mb-0">Verdiene Geld mit Werkzeugen, die du nur selten nutzt. Deine Geräte arbeiten für dich.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">📱</div>
-                        <h3>Flexibel verwalten</h3>
-                        <p>Bestimme selbst deine Verfügbarkeiten und Preise. Volle Kontrolle über deine Vermietungen.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">📱</div>
+                        <h3 class="mb-3">Flexibel verwalten</h3>
+                        <p class="mb-0">Bestimme selbst deine Verfügbarkeiten und Preise. Volle Kontrolle über deine Vermietungen.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">🤝</div>
-                        <h3>Community & Schutz</h3>
-                        <p>Lerne deine Nachbarn kennen. Deine Werkzeuge sind versichert und durch unsere Verifizierung geschützt.</p>
+                    <div class="feature-card h-100 d-flex flex-column">
+                        <div class="feature-icon mb-3">🤝</div>
+                        <h3 class="mb-3">Community & Schutz</h3>
+                        <p class="mb-0">Lerne deine Nachbarn kennen. Deine Werkzeuge sind versichert und durch unsere Verifizierung geschützt.</p>
                     </div>
                 </div>
             </div>
@@ -139,31 +137,37 @@
     <section id="beispiele" class="py-5">
         <div class="container">
             <h2 class="text-center mb-4">Beliebte Leihgegenstände</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/bohrmaschine.webp" class="card-img-top" alt="Bohrmaschine">
-                        <div class="card-body">
-                            <h4 class="card-title">Werkzeuge</h4>
-                            <p class="card-text">Von Bohrmaschinen bis Kreissägen - finde das richtige Werkzeug für dein Projekt.</p>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/bohrmaschine.webp" class="card-img-top" alt="Bohrmaschine">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-3">Werkzeuge</h4>
+                            <p class="card-text mb-0">Von Bohrmaschinen bis Kreissägen - finde das richtige Werkzeug für dein Projekt.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/new-leiter.webp" class="card-img-top" alt="Leiter">
-                        <div class="card-body">
-                            <h4 class="card-title">Leitern & Gerüste</h4>
-                            <p class="card-text">Sicher und stabil - perfekt für Renovierungen und Heimarbeit.</p>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/new-leiter.webp" class="card-img-top" alt="Leiter">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-3">Leitern & Gerüste</h4>
+                            <p class="card-text mb-0">Sicher und stabil - perfekt für Renovierungen und Heimarbeit.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="assets/new-grill.webp" class="card-img-top" alt="Grill">
-                        <div class="card-body">
-                            <h4 class="card-title">Freizeit & Event</h4>
-                            <p class="card-text">Von Grills bis Biertischgarnituren - alles für deine Veranstaltung.</p>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-img-wrapper">
+                            <img src="assets/new-grill.webp" class="card-img-top" alt="Grill">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-3">Freizeit & Event</h4>
+                            <p class="card-text mb-0">Von Grills bis Biertischgarnituren - alles für deine Veranstaltung.</p>
                         </div>
                     </div>
                 </div>
