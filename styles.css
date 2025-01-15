@@ -241,7 +241,7 @@ body {
 
 .hero-features {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     margin-bottom: 2.5rem;
 }
 
@@ -254,7 +254,7 @@ body {
 
 .feature-item i {
     color: var(--primary-light);
-    font-size: 1.2rem;
+    font-size: 1.2 rem;
 }
 
 .hero-buttons {
@@ -726,6 +726,20 @@ footer a:hover {
 
     .hero-buttons {
         justify-content: center;
+    }
+
+    .hero-features .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-features .feature-item i {
+        font-size: 3rem;
+        color: var(--primary-green);
+        width: 60px;
+        text-align: center;
     }
 
     .hero-app-mockup {
