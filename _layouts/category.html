@@ -2,11 +2,12 @@
 layout: base
 ---
 <section class="hero category-hero">
+    <div class="hero::before"></div>
     <div class="container">
         <div class="hero-content">
             <div class="hero-left">
                 <h1 class="hero-title">{{ page.title }}</h1>
-                <p class="hero-subtitle">{{ content }}</p>
+                <p class="hero-subtitle">{{ page.description }}</p>
                 
                 <div class="hero-features">
                     <div class="feature-item">
@@ -32,7 +33,7 @@ layout: base
             <div class="hero-right">
                 <div class="phone-container">
                     <div class="floating-categories">
-                        {% for item in page.items %}
+                        {% for item in page.items limit:11 %}
                         <div class="floating-icon" data-tooltip="{{ item.name }}">
                             <i class="{{ item.icon }}"></i>
                         </div>
