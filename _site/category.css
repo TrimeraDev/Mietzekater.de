@@ -264,3 +264,42 @@
     color: var(--text-light);
     margin-bottom: 15px;
 }
+
+.emoji-tools-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.emoji-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 300px;
+}
+
+.emoji-item {
+    font-size: 3rem;
+    opacity: 0;
+    transform: scale(0.5) rotate(-45deg);
+    animation: emoji-float 1s ease-out forwards;
+    animation-delay: var(--delay);
+    will-change: transform, opacity;
+}
+
+@keyframes emoji-float {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-45deg) translateY(20px);
+    }
+    70% {
+        opacity: 0.7;
+        transform: scale(1.1) rotate(10deg) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0) translateY(0);
+    }
+}
