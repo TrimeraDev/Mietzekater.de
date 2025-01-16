@@ -3,7 +3,7 @@ layout: category
 title: Werkzeuge
 slug: werkzeuge
 description: Leihe professionelle Werkzeuge von Nachbarn zu günstigen Preisen
-hero_image: /assets/categories/werkzeuge-hero.webp
+hero_image: /assets/categories/mietzekater-werkzeuge.webp
 
 # Thought-provoking Questions
 renter_question: "Du brauchst Werkzeug für DIY, Renovierung oder Reparatur?"
