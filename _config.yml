@@ -1,0 +1,24 @@
+title: Mietzekater
+description: Teilen, Leihen, Sparen in deiner Nachbarschaft
+
+# Build settings
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  categories:
+    output: true
+    permalink: /categories/:path/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "category"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
