@@ -1,0 +1,15 @@
+# Jekyll build output
+_site/
+
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# macOS system files
+.DS_Store
+Thumbs.db

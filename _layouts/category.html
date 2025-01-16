@@ -1,14 +1,14 @@
 ---
 layout: base
 ---
-<section class="hero category-hero py-4">
-    <div class="container">
-        <div class="hero-content">
-            <div class="hero-left">
-                <h1 class="hero-title">{{ page.title }}</h1>
-                <p class="hero-subtitle">{{ page.description }}</p>
+<section class="hero category-hero py-5 position-relative">
+    <div class="container position-relative">
+        <div class="row align-items-center position-relative">
+            <div class="col-lg-6 position-relative">
+                <h1 class="display-4 mb-4">{{ page.title }} - Teilen statt Kaufen</h1>
+                <p class="lead mb-4">{{ page.description }}</p>
                 
-                <div class="hero-features d-flex gap-3 mb-3">
+                <div class="hero-features d-flex gap-3 mb-4">
                     <div class="feature-item">
                         <i class="fas fa-hand-holding-usd"></i>
                         <span>Günstig</span>
@@ -23,24 +23,63 @@ layout: base
                     </div>
                 </div>
 
-                <div class="hero-buttons d-flex flex-wrap gap-3">
-                    <a href="#items" class="btn btn-primary">Artikel durchstöbern</a>
-                    <a href="#" class="btn btn-outline-light">Wie funktioniert's?</a>
+                <div class="hero-cta d-flex flex-wrap gap-3">
+                    <a href="#items" class="btn btn-primary btn-lg">Artikel entdecken</a>
+                    <a href="/how-it-works" class="btn btn-outline-secondary btn-lg">Wie funktioniert's?</a>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="hero-right d-none d-md-block">
-                <div class="emoji-tools-container">
-                    <div class="emoji-grid">
-                        <div class="emoji-item" style="--delay: 0.1s;">🪚</div>
-                        <div class="emoji-item" style="--delay: 0.2s;">🔨</div>
-                        <div class="emoji-item" style="--delay: 0.3s;">🧰</div>
-                        <div class="emoji-item" style="--delay: 0.4s;">🔧</div>
-                        <div class="emoji-item" style="--delay: 0.5s;">🪛</div>
-                        <div class="emoji-item" style="--delay: 0.6s;">🧯</div>
-                        <div class="emoji-item" style="--delay: 0.7s;">🔬</div>
-                        <div class="emoji-item" style="--delay: 0.8s;">📏</div>
-                        <div class="emoji-item" style="--delay: 0.9s;">🔩</div>
+    <div class="category-hero-image d-none d-lg-block">
+        <div class="image-wrapper h-100">
+            <div class="image-overlay"></div>
+            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image">
+        </div>
+    </div>
+</section>
+
+<section class="value-propositions py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-5">Vorteile für Mieter und Vermieter</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary mb-4">
+                            <i class="fas fa-user-friends me-2"></i>Für Mieter
+                        </h3>
+                        <p class="text-muted mb-3 fst-italic">{{ page.renter_question }}</p>
+                        <ul class="list-unstyled">
+                            {% for benefit in page.renter_benefits %}
+                            <li class="mb-3">
+                                <span class="me-2">{{ benefit.emoji }}</span>
+                                <strong>{{ benefit.title }}:</strong> {{ benefit.description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="card-title text-success mb-4">
+                            <i class="fas fa-coins me-2"></i>Für Vermieter
+                        </h3>
+                        <p class="text-muted mb-3 fst-italic">{{ page.lender_question }}</p>
+                        <ul class="list-unstyled">
+                            {% for benefit in page.lender_benefits %}
+                            <li class="mb-3">
+                                <span class="me-2">{{ benefit.emoji }}</span>
+                                <strong>{{ benefit.title }}:</strong> {{ benefit.description }}
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -51,6 +90,15 @@ layout: base
 <section id="items" class="py-5">
     <div class="container">
         <h2 class="text-center mb-5">Verfügbare Artikel in {{ page.title }}</h2>
+        {% if page.items.size == 0 %}
+        <div class="text-center">
+            <p class="lead mb-4">Noch keine Artikel in dieser Kategorie verfügbar.</p>
+            <div class="cta-actions">
+                <a href="/become-lender" class="btn btn-success btn-lg me-3">Werde Vermieter</a>
+                <a href="/categories" class="btn btn-outline-primary btn-lg">Andere Kategorien erkunden</a>
+            </div>
+        </div>
+        {% else %}
         <div class="row g-4">
             {% for item in page.items %}
             <div class="col-md-4">
@@ -64,6 +112,29 @@ layout: base
                     </div>
                 </div>
             </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="related-categories py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Entdecke ähnliche Kategorien</h2>
+        <div class="row">
+            {% for category in site.categories %}
+                {% if category.slug != page.slug %}
+                <div class="col-md-4 mb-3">
+                    <a href="{{ category.url }}" class="text-decoration-none">
+                        <div class="card category-card">
+                            <div class="card-body">
+                                <h3 class="card-title">{{ category.title }}</h3>
+                                <p class="card-text text-muted">{{ category.short_description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>

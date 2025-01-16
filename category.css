@@ -13,9 +13,8 @@
     position: relative;
     padding: 2rem 0;
     background: linear-gradient(to right, 
-        rgba(18, 18, 18, 1) 0%, 
-        rgba(18, 18, 18, 0.9) 30%, 
-        rgba(18, 18, 18, 0.7) 50%, 
+
+        rgba(18, 18, 18, 1) 50%, 
         rgba(152, 197, 95, 0.1) 100%
     );
     background-size: cover;
@@ -301,5 +300,43 @@
     100% {
         opacity: 1;
         transform: scale(1) rotate(0) translateY(0);
+    }
+}
+
+/* Category Hero Image Styles */
+.category-hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%; /* Exactly half the width */
+}
+
+.category-hero-image .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.category-hero-image .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.category-hero-image .image-wrapper::before {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .category-hero-image .image-wrapper {
+        max-height: 400px;
+        overflow: hidden;
     }
 }
