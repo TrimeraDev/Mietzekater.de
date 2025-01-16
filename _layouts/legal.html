@@ -1,0 +1,111 @@
+---
+layout: base
+---
+
+{% if page.hero_image %}
+<section class="hero legal-hero text-white position-relative">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="legal-hero-content text-center">
+                    <h1 class="hero-title">{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <p class="hero-subtitle">{{ page.subtitle }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if page.hero_image %}
+    <div class="hero-background-image" style="background-image: url('{{ page.hero_image }}')"></div>
+    {% endif %}
+</section>
+{% endif %}
+
+<section class="legal-content py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <article class="legal-article">
+                    {{ content }}
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.legal-hero {
+    position: relative;
+    padding: 2rem 0;
+    height: 55vh; /* Increased to 60% of viewport height */
+    min-height: 350px; /* Slightly increased minimum height */
+    max-height: 650px; /* Adjusted max height */
+    background-color: var(--background-dark);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.legal-hero .hero-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center 50%; /* Slightly shift towards bottom, but not too far */
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.legal-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, 
+        rgba(18, 18, 18, 1) 0%, 
+        rgba(18, 18, 18, 0.9) 30%, 
+        rgba(18, 18, 18, 0.7) 50%, 
+        rgba(152, 197, 95, 0.1) 100%
+    );
+    z-index: 2;
+}
+
+.legal-hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+}
+
+.legal-hero-content .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.legal-hero-content .hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.legal-content {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+}
+
+.legal-article h1, 
+.legal-article h2, 
+.legal-article h3 {
+    color: var(--primary-light);
+    margin-bottom: 1rem;
+}
+
+.legal-article p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+</style>
