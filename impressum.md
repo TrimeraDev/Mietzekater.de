@@ -2,29 +2,32 @@
 layout: legal
 title: Impressum
 subtitle: Transparenz und Verantwortung
-hero_image: /assets/legal/neighborhood-sharing-hero.webp
+hero_image: /assets/legal/data-protection-hero.webp
 ---
 
 # Impressum
 
-## Mietzekater UG (haftungsbeschränkt)
+## Verantwortliche für Mietzekater.de
+
+Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwortung für die Plattform bei:
 
 ### Kontaktinformationen
-- **Firmenname:** Mietzekater UG (haftungsbeschränkt)
-- **Geschäftsführer:** [Gründername]
-- **Registergericht:** Amtsgericht Berlin
-- **Registernummer:** HRB [Nummer]
-- **Umsatzsteuer-ID:** DE [Nummer]
 
-### Kontakt
-- **E-Mail:** hallo@mietzekater.de
-- **Telefon:** +49 (0) 30 [Nummer]
-- **Adresse:** [Straße], 10115 Berlin, Deutschland
+**Name:** Vincent Schulz
+
+**E-Mail:** hallo@mietzekater.de
+
+**Adresse:** Paulusstraße 6, 62064 Aachen, Deutschland
+
+**Telefon:** +49 (0) 15222 985887
 
 ### Haftungsausschluss
-Mietzekater übernimmt keine Haftung für Inhalte externer Links oder Schäden durch Nutzung der Plattform.
+
+Mietzekater.de übernimmt keine Haftung für Inhalte externer Links oder Schäden, die durch die Nutzung der Plattform entstehen. 
+Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
 ### Streitschlichtung
-Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+
+Wir sind derzeit nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 *Stand: Januar 2025*
