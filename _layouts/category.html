@@ -1,39 +1,67 @@
 ---
 layout: base
 ---
-<section class="category-page py-5">
+<section class="hero category-hero">
     <div class="container">
-        <h1 class="text-center mb-4">{{ page.title }}</h1>
-        
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="category-description mb-4">
-                    {{ content }}
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1 class="hero-title">{{ page.title }}</h1>
+                <p class="hero-subtitle">{{ content }}</p>
+                
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <span>Günstig</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Sicher</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Lokal</span>
+                    </div>
                 </div>
 
-                {% if page.items %}
-                <div class="category-items">
-                    <h2>Verfügbare Artikel in dieser Kategorie</h2>
-                    <div class="row g-4">
+                <div class="hero-buttons d-flex flex-wrap gap-3">
+                    <a href="#items" class="btn btn-primary">Artikel durchstöbern</a>
+                    <a href="#" class="btn btn-outline-light">Wie funktioniert's?</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="phone-container">
+                    <div class="floating-categories">
                         {% for item in page.items %}
-                        <div class="col-md-4">
-                            <div class="card h-100">
-                                <img src="{{ item.image }}" class="card-img-top" alt="{{ item.name }}">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ item.name }}</h5>
-                                    <p class="card-text">{{ item.description }}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="price">Ab {{ item.price }}€/Tag</span>
-                                        <a href="#" class="btn btn-primary btn-sm">Mieten</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="floating-icon" data-tooltip="{{ item.name }}">
+                            <i class="{{ item.icon }}"></i>
                         </div>
                         {% endfor %}
                     </div>
+                    <img src="{{ page.hero_image | default: '/assets/MietzekaterApp.webp' }}" alt="{{ page.title }} App" class="hero-image">
                 </div>
-                {% endif %}
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="items" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Verfügbare Artikel in {{ page.title }}</h2>
+        <div class="row g-4">
+            {% for item in page.items %}
+            <div class="col-md-4">
+                <div class="feature-card h-100 d-flex flex-column">
+                    <div class="feature-icon mb-3">{{ item.emoji | default: '✨' }}</div>
+                    <h3 class="mb-3">{{ item.name }}</h3>
+                    <p class="mb-0">{{ item.description }}</p>
+                    <div class="mt-auto pt-3">
+                        <span class="badge bg-primary">Ab {{ item.price }}€/Tag</span>
+                        <a href="#" class="btn btn-outline-primary btn-sm float-end">Mieten</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
