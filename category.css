@@ -1,3 +1,14 @@
+:root {
+    --primary-green: #75A33D;
+    --primary-dark: #567A2E;
+    --primary-light: #98C55F;
+    --background-dark: #121212;
+    --off-white: #f4f4f4;
+    --off-white-text: #e0e0e0;
+    --text-light: #cccccc;
+}
+
+/* Ensure category hero has same styling as main hero */
 .category-hero {
     position: relative;
     padding: 80px 0;
@@ -198,4 +209,33 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+}
+
+/* Ensure feature cards match index page */
+.feature-card {
+    background: rgba(18, 18, 18, 0.7);
+    border: 1px solid var(--primary-green);
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card .feature-icon {
+    font-size: 2rem;
+    color: var(--primary-green);
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: var(--off-white);
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: var(--text-light);
+    margin-bottom: 15px;
 }
