@@ -1,16 +1,19 @@
 title: Mietzekater
-description: Teilen, Leihen, Sparen in deiner Nachbarschaft
+description: Lokale Sharing-Plattform für Nachbarschaftshilfe
+baseurl: "" # Important for Jekyll asset linking
+url: "mietzekater.de"
 
 # Build settings
 permalink: /:categories/:title/
+markdown: kramdown
 
 # Collections
 collections:
   categories:
     output: true
-    permalink: /categories/:path/
+    permalink: /:collection/:path/
 
-# Default layouts
+# Defaults
 defaults:
   - scope:
       path: ""
