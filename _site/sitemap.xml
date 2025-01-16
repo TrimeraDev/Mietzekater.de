@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/categories/elektronik/</loc>
+<lastmod>2025-01-16T04:14:45+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/categories/werkzeuge/</loc>
+<lastmod>2025-01-16T04:14:45+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+<lastmod>2025-01-15T21:21:33+01:00</lastmod>
+</url>
+</urlset>

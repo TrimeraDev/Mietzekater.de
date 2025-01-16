@@ -1,14 +1,14 @@
 ---
 layout: base
 ---
-<section class="hero category-hero">
+<section class="hero category-hero py-4">
     <div class="container">
         <div class="hero-content">
             <div class="hero-left">
                 <h1 class="hero-title">{{ page.title }}</h1>
                 <p class="hero-subtitle">{{ page.description }}</p>
                 
-                <div class="hero-features">
+                <div class="hero-features d-flex gap-3 mb-3">
                     <div class="feature-item">
                         <i class="fas fa-hand-holding-usd"></i>
                         <span>Günstig</span>
@@ -29,15 +29,9 @@ layout: base
                 </div>
             </div>
 
-            <div class="hero-right">
+            <div class="hero-right d-none d-md-block">
                 <div class="phone-container">
-                    <div class="floating-categories">
-                        {% for item in page.items limit:11 %}
-                        <div class="floating-icon" data-tooltip="{{ item.name }}">
-                            <i class="{{ item.icon }}"></i>
-                        </div>
-                        {% endfor %}
-                    </div>
+                
                     <img src="{{ page.hero_image | default: '/assets/MietzekaterApp.webp' }}" alt="{{ page.title }} App" class="hero-image">
                 </div>
             </div>
@@ -65,3 +59,7 @@ layout: base
         </div>
     </div>
 </section>
+
+{{ content }}
+
+{% include newsletter.html %}
