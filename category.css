@@ -400,3 +400,28 @@
 .related-categories.bg-dark .category-card .card-title {
     color: var(--off-white-text);
 }
+
+/* CTA Actions Styling */
+.cta-actions .btn-success {
+    background-color: var(--primary-green);
+    border-color: var(--primary-dark);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-actions .btn-success:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+.cta-actions .btn-outline-primary {
+    border-color: var(--primary-light);
+    color: var(--primary-light);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-actions .btn-outline-primary:hover {
+    background-color: var(--primary-light);
+    color: var(--background-dark);
+    transform: scale(1.05);
+}
