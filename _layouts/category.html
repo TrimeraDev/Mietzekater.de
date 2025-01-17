@@ -6,8 +6,13 @@ layout: base
         <div class="row align-items-center position-relative">
             <div class="col-lg-6 position-relative">
                 <h1 class="display-4 mb-4">{{ page.title }} - Teilen statt Kaufen</h1>
-                <p class="lead mb-4">{{ page.description }}</p>
                 
+                {% if page.description %}
+                <div class="detailed-description">
+                    {{ page.description }}
+                </div>
+                {% endif %}
+
                 <div class="hero-features d-flex gap-3 mb-4">
                     <div class="feature-item">
                         <i class="fas fa-hand-holding-usd"></i>
@@ -24,13 +29,12 @@ layout: base
                 </div>
 
                 <div class="hero-cta d-flex flex-wrap gap-3">
-                    <a href="#items" class="btn btn-primary btn-lg">Artikel entdecken</a>
-                    <a href="/how-it-works" class="btn btn-outline-secondary btn-lg">Wie funktioniert's?</a>
+                    <a href="#newsletter" class="btn btn-primary btn-lg">Mitmachen</a>
+                    <a href="#how-it-works" class="btn btn-outline-secondary btn-lg">Wie funktioniert's?</a>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="category-hero-image d-none d-lg-block">
         <div class="image-wrapper h-100">
             <div class="image-overlay"></div>
@@ -141,4 +145,14 @@ layout: base
     </div>
 </section>
 
-{{ content }}
+<section class="category-content">
+    <div class="container">
+        {% if page.description %}
+        <div class="detailed-description">
+            {{ page.description }}
+        </div>
+        {% endif %}
+
+        {{ content }}
+    </div>
+</section>

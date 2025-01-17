@@ -56,41 +56,38 @@ items: []
 # Detailed Category Description
 ---
 
-## Warum Mietzekater für Werkzeuge?
+## Wie du Mietzekater für Werkzeuge nutzen kannst
 
-<div class="row value-propositions">
-  <div class="col-md-6">
-    ### 🏡 Für Mieter
-    {% for benefit in page.renter_benefits %}
-      - {{ benefit.emoji }} **{{ benefit.title }}**: {{ benefit.description }}
-    {% endfor %}
+<div class="use-cases-grid">
+  <div class="use-case-card">
+    <h3><i class="fas fa-home"></i> Heimwerken & Renovieren</h3>
+    <ul>
+      <li>Komplette Wohnungsrenovierungen</li>
+      <li>Kleine Reparaturen und Instandhaltung</li>
+      <li>Individuelle DIY-Projekte</li>
+      <li>Wandgestaltung und Bodenverlegung</li>
+    </ul>
   </div>
-  
-  <div class="col-md-6">
-    ### 💼 Für Vermieter
-    {% for benefit in page.lender_benefits %}
-      - {{ benefit.emoji }} **{{ benefit.title }}**: {{ benefit.description }}
-    {% endfor %}
+
+  <div class="use-case-card">
+    <h3><i class="fas fa-tools"></i> Professionelle Reparaturen</h3>
+    <ul>
+      <li>Elektronik-Reparaturen</li>
+      <li>Fahrrad- und Fahrzeuginstandsetzung</li>
+      <li>Garten- und Landschaftspflege</li>
+      <li>Haushaltsgeräte-Wartung</li>
+    </ul>
+  </div>
+
+  <div class="use-case-card">
+    <h3><i class="fas fa-palette"></i> Kreative Projekte</h3>
+    <ul>
+      <li>Holzarbeiten und Kunsthandwerk</li>
+      <li>Gartengestaltung und Dekoration</li>
+      <li>Modellbau und Basteln</li>
+      <li>Künstlerische Installationen</li>
+    </ul>
   </div>
 </div>
 
-## Anwendungsbeispiele
-
-1. **Heimwerken**
-   - Renovierung von Wohnungen und Häusern
-   - Kleine Reparaturen und Instandhaltungsarbeiten
-   - DIY-Projekte und Heimwerkerprojekte
-
-2. **Professionelle Reparaturen**
-   - Smartphone- und Elektronik-Reparaturen
-   - Fahrrad- und Autoreparaturen
-   - Garten- und Landschaftspflegearbeiten
-
-3. **Kreative Projekte**
-   - Holzarbeiten und Kunsthandwerk
-   - Gartengestaltung
-   - Modellbau und Basteln
-
-## Unser Versprechen
-
-Mietzekater macht das Mieten von Werkzeugen so einfach wie nie zuvor. Wir verbinden Nachbarn, sparen Ressourcen und machen DIY für jeden zugänglich.
+Mietzekater revolutioniert das Werkzeug-Sharing in deiner Nachbarschaft. Spare Geld, schone Ressourcen und entdecke die Freude am Selbermachen – ganz einfach und nachhaltig.
