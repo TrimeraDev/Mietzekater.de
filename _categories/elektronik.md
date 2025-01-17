@@ -2,7 +2,7 @@
 title: Elektronik
 layout: category
 description: Moderne Elektronik von Nachbarn zu fairen Preisen
-hero_image: /assets/categories/elektronik-hero.webp
+hero_image: /assets/categories/mietzekater-elektronik.webp
 items:
   - name: Drohne
     description: Hochauflösende Kameradrohne für Luftaufnahmen
