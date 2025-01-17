@@ -9,9 +9,6 @@ hero_image: /assets/categories/mietzekater-werkzeuge.webp
 renter_question: "Du brauchst Werkzeug für DIY, Renovierung oder Reparatur?"
 lender_question: "Dein Werkzeug verstaubt im Keller? Lass es lieber für dich arbeiten!"
 
-# Emoji Grid for Hero Section
-emojis: []
-
 # Value Propositions
 renter_benefits:
   - emoji: 💰
