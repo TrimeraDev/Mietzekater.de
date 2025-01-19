@@ -1,0 +1,22 @@
+<section class="related-categories py-5" id="categories">
+    <div class="container">
+        <h2 class="text-center mb-5">{{ include.title | default: 'Weitere Kategorien' }}</h2>
+        <div class="row">
+            {% for category in site.categories %}
+                {% if category.slug != page.slug %}
+                <div class="col-md-4 mb-3">
+                    <a href="{{ category.url }}" class="text-decoration-none">
+                        <div class="card category-card">
+                            <img src="/assets/categories/mietzekater-{{ category.slug }}.webp" alt="{{ category.title }} Category" class="card-img-top">
+                            <div class="card-body">
+                                <h3 class="card-title">{{ category.title }}</h3>
+                                <p class="card-text text-muted">{{ category.short_description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

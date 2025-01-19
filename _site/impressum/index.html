@@ -195,7 +195,11 @@ Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber vera
             <div class="col-md-6">
                 <div class="custom-dark-card">
                     <h3 class="mb-4">Sei von Anfang an dabei!</h3>
-                    <form id="signup-form">
+                    <div id="success-message" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+                        <strong>Vielen Dank!</strong> Wir halten dich auf dem Laufenden. 🐱
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    <form id="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbz684ajMaR19PfcsvACNop3R3SYLBmXr5HCXo0RXqCSssihLRf3etfKK7IEmqi8BMzvUg/exec" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="mb-3">
                             <label for="email" class="form-label">E-Mail-Adresse</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
@@ -210,11 +214,13 @@ Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber vera
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Benachrichtige mich beim Launch</button>
                     </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <script src="/signup.js"></script>
 
