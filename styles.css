@@ -702,6 +702,10 @@ footer a:hover {
     color: var(--primary-light);
 }
 
+.text-light-muted {
+    color: var(--text-muted) !important;
+}
+
 @media (max-width: 991px) {
     .hero {
         padding: 60px 0;
