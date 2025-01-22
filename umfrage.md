@@ -16,7 +16,7 @@ title: Umfrage
 <div class="container py-5">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdUhBfAD76VdgoyRpc5U252SDoK5GgZza6Ffh0apWkqp2zOfw/viewform?embedded=true" 
         width="100%" 
-        height="2200" 
+        height="auto" 
         frameborder="0" 
         marginheight="0" 
         marginwidth="0">Loading…</iframe>
