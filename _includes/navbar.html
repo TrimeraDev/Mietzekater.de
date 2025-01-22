@@ -32,6 +32,7 @@
         </div>
     </div>
 </nav>
+{% unless page.url == "/umfrage" or page.url == "/umfrage/" %}
 <div class="bg-primary text-white text-center py-2">
     <div class="container">
         <a href="/umfrage" class="text-white text-decoration-none">
@@ -39,3 +40,4 @@
         </a>
     </div>
 </div>
+{% endunless %}
