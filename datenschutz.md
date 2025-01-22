@@ -63,9 +63,31 @@ Die Verarbeitung deiner Daten erfolgt gemäß Art. 6 Abs. 1 DSGVO:
 #### 5. Datenweitergabe
 Deine Daten werden grundsprüglich nicht an Dritte weitergegeben. Eine Ausnahme bildet die Verarbeitung durch unseren Hosting-Dienstleister GitHub (siehe Punkt 1c).
 
+#### 6. Nutzung von Drittanbieter-Diensten
+##### a) **Google Forms und Google Sheets**
+- Für unsere Umfragen und Datenerhebung nutzen wir Google Forms und Google Sheets.
+- Bei der Teilnahme an unseren Umfragen werden folgende Daten erfasst:
+  - E-Mail-Adresse (falls im Formular angegeben)
+  - Antworten zu den Umfragefragen
+  - Zeitstempel der Umfrageteilnahme
+
+##### Datenschutz bei Google Forms und Google Sheets:
+- Die erhobenen Daten werden in Google Sheets gespeichert und von Google gemäß deren Datenschutzrichtlinien verarbeitet.
+- Wir haben keinen Zugriff auf zusätzliche personenbezogene Daten über die von Ihnen bereitgestellten Informationen hinaus.
+- Google bietet Sicherheitsmaßnahmen zum Schutz Ihrer Daten, einschließlich Verschlüsselung und Zugriffskontrollen.
+
+##### Ihre Rechte:
+- Sie können jederzeit Ihre Einwilligung zur Datenverarbeitung widerrufen.
+- Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten.
+- Kontaktieren Sie uns unter datenschutz@mietzekater.de für weitere Informationen oder Anfragen.
+
+##### Speicherdauer:
+- Umfragedaten werden nur so lange gespeichert, wie es für den Zweck der Datenerhebung erforderlich ist.
+- Nach Auswertung der Umfrage werden die Daten gelöscht oder anonymisiert.
+
 ---
 
-#### 6. Deine Rechte
+#### 7. Deine Rechte
 Du hast das Recht:
 - Auskunft über die von uns gespeicherten Daten zu verlangen (Art. 15 DSGVO),
 - Berichtigung unrichtiger Daten zu fordern (Art. 16 DSGVO),
@@ -76,7 +98,7 @@ Du hast das Recht:
 
 ---
 
-#### 7. Änderungen dieser Datenschutzerklärung
+#### 8. Änderungen dieser Datenschutzerklärung
 Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, um gesetzlichen oder technischen Änderungen Rechnung zu tragen. Die aktuelle Version findest du immer auf unserer Website.
 
 ---
