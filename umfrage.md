@@ -3,14 +3,6 @@ layout: base
 title: Umfrage
 ---
 
-<div class="d-flex flex-column flex-md-row align-items-center justify-content-center bg-dark text-white p-4">
-    <img src="/assets/MietzekaterIconTransparent.webp" alt="Mietzekater Logo" class="mb-3 mb-md-0 me-md-4" style="width: 100px; height: 100px;">
-    <div class="text-center text-md-start">
-        <h1 class="display-4 mb-0">Mietzekater.de</h1>
-        <p class="lead mb-0">Gemeinsam Mieten</p>
-    </div>
-</div>
-
 <div class="container-fluid p-0 vh-75">
     <iframe 
         src="https://docs.google.com/forms/d/e/1FAIpQLSdUhBfAD76VdgoyRpc5U252SDoK5GgZza6Ffh0apWkqp2zOfw/viewform?embedded=true" 
