@@ -19,12 +19,8 @@ title: Umfrage
 <script>
 function resizeIframe(iframe) {
     function adjustIframe() {
-        // Calculate available height
-        const headerHeight = document.querySelector('.bg-dark').offsetHeight;
-        const availableHeight = window.innerHeight - headerHeight;
-        
         // Set iframe to fill remaining height
-        iframe.style.height = `${availableHeight}px`;
+        iframe.style.height = `${window.innerHeight * 0.75}px`;
         
         // Ensure content is fully visible
         iframe.contentWindow.document.body.style.overflow = 'auto';
@@ -53,8 +49,5 @@ function resizeIframe(iframe) {
     width: 100%;
     height: 100%;
     overflow: auto;
-}
-.container-fluid.vh-100 {
-    height: calc(100vh - 140px); /* Subtract header height */
 }
 </style>
