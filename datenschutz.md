@@ -11,7 +11,7 @@ hero_image: /assets/legal/data-protection-hero.webp
 Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwortung für die Verarbeitung personenbezogener Daten bei:
 
 **Vincent Schulz**  
-Adresse: Paulusstraße 6, 62064 Aachen  
+Adresse: Paulusstraße 6, 52064 Aachen  
 E-Mail: datenschutz@mietzekater.de  
 Telefon: +49 (0) 15222 985887  
 

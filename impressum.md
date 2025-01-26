@@ -13,18 +13,18 @@ Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwor
 
 ### Kontaktinformationen
 
-**Name:** Vincent Schulz
+**Name:** Vincent Schulz & Simon Bilecen
 
 **E-Mail:** hallo@mietzekater.de
 
-**Adresse:** Paulusstraße 6, 62064 Aachen, Deutschland
+**Adresse:** Paulusstraße 6, 52064 Aachen, Deutschland
 
 **Telefon:** +49 (0) 15222 985887
 
 ### Haftungsausschluss
 
 Mietzekater.de übernimmt keine Haftung für Inhalte externer Links oder Schäden, die durch die Nutzung der Plattform entstehen. 
-Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
+Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
 ### Streitschlichtung
 
