@@ -909,3 +909,14 @@ footer a:hover {
         font-size: 1.2rem;
     }
 }
+
+/* Blog Hero Height Adjustments */
+.blog-hero.category-hero {
+    min-height: 50vh;
+}
+
+@media (max-width: 768px) {
+    .blog-hero.category-hero {
+        min-height: 60vh;
+    }
+}

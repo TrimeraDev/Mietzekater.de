@@ -1,20 +1,20 @@
 ---
 layout: base
 ---
-<section class="hero blog-hero py-5 position-relative">
-    <div class="blog-hero-image">
+<section class="hero category-hero blog-hero py-5 position-relative">
+    <div class="category-hero-image">
         <div class="image-wrapper h-100">
             <div class="image-overlay"></div>
-            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image object-fit-cover object-position-center">
+            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image">
         </div>
     </div>
     <div class="container position-relative">
         <div class="row align-items-center position-relative">
             <div class="col-lg-6 position-relative">
-                <h1 class="display-4 mb-4">{{ page.title }}</h1>
+                <h1 class="hero-title mb-4">{{ page.title }}</h1>
                 
                 {% if page.description %}
-                <div class="detailed-description">
+                <div class="hero-subtitle">
                     {{ page.description }}
                 </div>
                 {% endif %}
@@ -25,13 +25,13 @@ layout: base
                         <span>{{ page.date | date: "%d.%m.%Y" }}</span>
                     </div>
                     {% if page.author %}
-                    <div class="meta-item">
+                    <div class="meta-item d-none d-md-flex">
                         <i class="fas fa-user"></i>
                         <span>{{ page.author }}</span>
                     </div>
                     {% endif %}
                     {% if page.reading_time %}
-                    <div class="meta-item">
+                    <div class="meta-item d-none d-md-flex">
                         <i class="fas fa-clock"></i>
                         <span>{{ page.reading_time }} Min. Lesezeit</span>
                     </div>
