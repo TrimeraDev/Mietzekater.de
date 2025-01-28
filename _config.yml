@@ -7,6 +7,11 @@ url: "https://www.mietzekater.de" # Full URL of your custom domain
 permalink: /:categories/:title/
 markdown: kramdown
 
+# Blog settings
+blog_permalink: /blog/:year/:month/:day/:title/
+paginate: 9
+paginate_path: "/blog/page:num/"
+
 # Collections
 collections:
   categories:
@@ -20,8 +25,15 @@ defaults:
       type: "categories"
     values:
       layout: "category"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title/"
 
 # Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate

@@ -471,6 +471,94 @@
     font-weight: bold;
 }
 
+/* Blog Hero Styling */
+.blog-hero {
+    position: relative;
+    padding: 2rem 0;
+    background: linear-gradient(to right, 
+        rgba(18, 18, 18, 1) 50%, 
+        rgba(152, 197, 95, 0.1) 100%
+    );
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.blog-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(
+        circle at 70% 50%, 
+        rgba(152, 197, 95, 0.4) 0%, 
+        rgba(152, 197, 95, 0.05) 50%, 
+        transparent 70%
+    );
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.blog-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Blog Hero Image Styles */
+.blog-hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%; /* Exactly half the width */
+}
+
+.blog-hero-image .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.blog-hero-image .hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.blog-hero-image .image-wrapper::before {
+    display: none;
+}
+
+/* Medium and below: image behaves as a full-width banner */
+@media (max-width: 992px) {
+    .blog-hero-image {
+        position: relative; /* Detach from right-side layout */
+        top: 0;
+        left: 0;
+        width: 100%; /* Full width */
+        height: 200px; /* Banner height */
+        z-index: 0;
+    }
+    .blog-hero-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9) 80%);
+        pointer-events: none; /* Allow interactions with content beneath */
+        z-index: 2; /* Ensure the overlay appears above the image */
+    }
+}
+
 /* Mobile Responsiveness Improvements */
 @media (max-width: 768px) {
     .hero.category-hero {

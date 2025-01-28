@@ -8,6 +8,7 @@ gem 'base64' # Add this to resolve base64 warning
 group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
 end
 
 # Windows and JRuby Compatibility

@@ -1,0 +1,80 @@
+---
+layout: base
+---
+<section class="hero blog-hero py-5 position-relative">
+    <div class="blog-hero-image">
+        <div class="image-wrapper h-100">
+            <div class="image-overlay"></div>
+            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image object-fit-cover object-position-center">
+        </div>
+    </div>
+    <div class="container position-relative">
+        <div class="row align-items-center position-relative">
+            <div class="col-lg-6 position-relative">
+                <h1 class="display-4 mb-4">{{ page.title }}</h1>
+                
+                {% if page.description %}
+                <div class="detailed-description">
+                    {{ page.description }}
+                </div>
+                {% endif %}
+
+                <div class="blog-meta d-flex gap-3 mb-4">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>{{ page.date | date: "%d.%m.%Y" }}</span>
+                    </div>
+                    {% if page.author %}
+                    <div class="meta-item">
+                        <i class="fas fa-user"></i>
+                        <span>{{ page.author }}</span>
+                    </div>
+                    {% endif %}
+                    {% if page.reading_time %}
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>{{ page.reading_time }} Min. Lesezeit</span>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<article class="blog-content py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+</article>
+
+{% if site.related_posts.size > 0 %}
+<section class="related-posts py-5 bg-dark text-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Weitere interessante Artikel</h2>
+        <div class="row">
+            {% for post in site.related_posts limit:3 %}
+            <div class="col-md-4 mb-4">
+                <a href="{{ post.url }}" class="text-decoration-none">
+                    <div class="card blog-card h-100">
+                        {% if post.hero_image %}
+                        <img src="{{ post.hero_image }}" class="card-img-top" alt="{{ post.title }}">
+                        {% endif %}
+                        <div class="card-body">
+                            <h3 class="card-title h5">{{ post.title }}</h3>
+                            {% if post.description %}
+                            <p class="card-text text-light-muted">{{ post.description }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
