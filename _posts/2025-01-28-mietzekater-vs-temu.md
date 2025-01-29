@@ -2,6 +2,8 @@
 layout: post
 title: "Mietzekater vs. Temu & Co."
 description: "Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig. Wie wir bessere Angebote ermöglichen."
+meta_description: "Lokales Mieten in Aachen vs. Temu: Entdecke, warum Mietzekater nachhaltiger, günstiger und gemeinschaftsorientierter ist. ✓ Lokal ✓ Nachhaltig ✓ Günstig"
+meta_keywords: "Mietzekater Aachen, Temu Vergleich, lokales Mieten, Nachhaltigkeit Aachen, Sharing Economy, günstiger Verleih, lokale Alternative"
 hero_image: /assets/blog/mietzekater-vs-temu-2.webp
 author: Vincent
 reading_time: 8

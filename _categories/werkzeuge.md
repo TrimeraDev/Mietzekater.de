@@ -3,6 +3,8 @@ layout: category
 title: Werkzeuge
 slug: werkzeuge
 description: Leihe professionelle Werkzeuge von Nachbarn zu günstigen Preisen
+meta_description: "Werkzeuge günstig mieten in Aachen und Umgebung ✓ Bohrmaschinen ✓ Sägen ✓ Schleifgeräte und mehr. Spare Geld und Platz mit Mietzekater - der sicheren Verleihplattform für Werkzeuge in deiner Nachbarschaft."
+meta_keywords: "Werkzeuge mieten Aachen, Werkzeugverleih Aachen, Bohrmaschine leihen Aachen, Werkzeug ausleihen, günstige Werkzeuge Aachen, Heimwerker Tools, DIY Werkzeuge, lokaler Werkzeugverleih"
 hero_image: /assets/categories/mietzekater-werkzeuge.webp
 
 # Thought-provoking Questions

@@ -3,6 +3,8 @@ layout: category
 title: Elektronik
 slug: elektronik
 description: Moderne Elektronik von Nachbarn zu fairen Preisen
+meta_description: "Elektronik günstig mieten in Aachen ✓ Kameras ✓ Drohnen ✓ Gaming Equipment und mehr. Finde hochwertige Elektronik zum Ausleihen in deiner Nachbarschaft mit Mietzekater."
+meta_keywords: "Elektronik mieten Aachen, Kamera leihen Aachen, Drohne mieten Aachen, Gaming Equipment, Elektronik ausleihen, günstige Elektronik, lokaler Verleih Aachen"
 hero_image: /assets/categories/mietzekater-elektronik.webp
 
 # Thought-provoking Questions

@@ -2,7 +2,9 @@
 layout: category
 title: Kreativ
 slug: kreativ
-description: Kreative Ausrüstung von Nachbarn für deine DIY-Projekte
+description: Leihe Nähmaschinen, Bastelzubehör und kreative Tools von Nachbarn
+meta_description: "Kreativbedarf günstig mieten in Aachen ✓ Nähmaschinen ✓ Bastelzubehör ✓ Kreativwerkzeuge. Entdecke lokale Angebote für deine DIY-Projekte mit Mietzekater."
+meta_keywords: "Kreativbedarf Aachen, Nähmaschine mieten Aachen, Bastelzubehör leihen, DIY Equipment, Kreativwerkzeuge, Bastelbedarf Aachen, lokaler Verleih, kreative Tools"
 hero_image: /assets/categories/mietzekater-kreativ.webp
 
 # Thought-provoking Questions

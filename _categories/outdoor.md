@@ -2,7 +2,9 @@
 layout: category
 title: Outdoor
 slug: outdoor
-description: Outdoor-Equipment von Nachbarn für dein nächstes Abenteuer
+description: Finde Camping- und Outdoor-Equipment in deiner Nachbarschaft
+meta_description: "Outdoor-Equipment günstig mieten in Aachen ✓ Camping ✓ Wandern ✓ Sport. Leihe Zelte, Rucksäcke und mehr für dein nächstes Abenteuer mit Mietzekater."
+meta_keywords: "Outdoor Equipment Aachen, Camping Ausrüstung mieten, Wanderausrüstung leihen, Sportgeräte Aachen, Zelt mieten, Rucksack leihen, Outdoor Verleih Aachen"
 hero_image: /assets/categories/mietzekater-outdoor.webp
 
 # Thought-provoking Questions

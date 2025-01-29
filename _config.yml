@@ -2,6 +2,12 @@ title: Mietzekater
 description: Lokale Sharing-Plattform für Nachbarschaftshilfe
 baseurl: "" # Empty string for custom domain
 url: "https://www.mietzekater.de" # Full URL of your custom domain
+meta_description: >-
+  Mietzekater: Die führende Plattform für lokales Mieten in Aachen ✓ Werkzeuge ✓ Elektronik ✓ Freizeit. 
+  Teile und miete Gegenstände in deiner Nachbarschaft. Spare Geld, schone die Umwelt.
+keywords: >-
+  Mietzekater Aachen, Sharing Economy Aachen, lokales Mieten Aachen, Verleihplattform, Werkzeuge mieten, 
+  Elektronik leihen, nachhaltig teilen, Gegenstände vermieten, günstig mieten Aachen
 
 # Build settings
 permalink: /:categories/:title/
