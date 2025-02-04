@@ -12,7 +12,7 @@ Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwor
 
 **Vincent Schulz**  
 Adresse: Paulusstraße 6, 52064 Aachen  
-E-Mail: datenschutz@mietzekater.de  
+E-Mail: vincent.schulz@alumni.fh-aachen.de 
 Telefon: +49 (0) 15222 985887  
 
 #### Allgemeines
@@ -81,9 +81,10 @@ Deine Daten werden grundsprüglich nicht an Dritte weitergegeben. Eine Ausnahme 
 - Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten.
 - Kontaktieren Sie uns unter datenschutz@mietzekater.de für weitere Informationen oder Anfragen.
 
-##### Speicherdauer:
-- Umfragedaten werden nur so lange gespeichert, wie es für den Zweck der Datenerhebung erforderlich ist.
-- Nach Auswertung der Umfrage werden die Daten gelöscht oder anonymisiert.
+##### b) **Web-Analytics mit counter.dev**
+Wir setzen counter.dev als ein sehr begrenztes und datenschutzfreundliches Analyse-Tool ein, um den Traffic auf unseren Webseiten besser zu verstehen. Dabei werden ausschließlich anonymisierte und aggregierte Daten erhoben, wie beispielsweise Seitenaufrufe und Verweildauer. Es erfolgt keine Erhebung personenbezogener Daten, und die Analyse dient ausschließlich dazu, die Funktionalität und Sicherheit unserer Website zu verbessern.
+
+Die Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO. Weitere Informationen zum Datenschutz bei counter.dev findest du in deren Datenschutzerklärung unter: [https://counter.dev/pages/privacy.html](https://counter.dev/pages/privacy.html) .
 
 ---
 
@@ -105,4 +106,4 @@ Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, um gesetz
 
 Falls Du Fragen oder Bedenken zu dieser Datenschutzerklärung haben, kontaktiere uns bitte unter den angegebenen Kontaktinformationen. 
 
-Datum der letzten Aktualisierung: Januar 2025
+Datum der letzten Aktualisierung: Februar 2025
