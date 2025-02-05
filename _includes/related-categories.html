@@ -2,7 +2,29 @@
     <div class="container">
         <h2 class="text-center mb-5">{{ include.title | default: 'Weitere Kategorien' }}</h2>
         <div class="row">
-            {% for category in site.categories %}
+            {% assign priority_slugs = "kreativ,werkzeuge,elektronik,outdoor,auto-zubehoer" | split: "," %}
+            {% assign sorted_categories = site.categories | sort: "title" %}
+            {% assign priority_categories = "" | split: "" %}
+            {% assign other_categories = "" | split: "" %}
+            
+            {% for slug in priority_slugs %}
+                {% for category in sorted_categories %}
+                    {% if category.slug == slug %}
+                        {% assign priority_categories = priority_categories | push: category %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+            
+            {% for category in sorted_categories %}
+                {% unless priority_slugs contains category.slug %}
+                    {% assign other_categories = other_categories | push: category %}
+                {% endunless %}
+            {% endfor %}
+            
+            {% assign all_categories = priority_categories | concat: other_categories %}
+            
+            {% for category in all_categories %}
                 {% if category.slug != page.slug %}
                 <div class="col-md-4 mb-3">
                     <a href="{{ category.url }}" class="text-decoration-none">
@@ -18,5 +40,63 @@
                 {% endif %}
             {% endfor %}
         </div>
+        <div class="scroll-arrow left">
+            <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+        </div>
+        <div class="scroll-arrow right">
+            <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </div>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
     </div>
 </section>
+
+<script>
+(function() {
+    const container = document.querySelector('#categories .row');
+    const arrows = document.querySelectorAll('.scroll-arrow');
+    const progressBar = document.querySelector('.progress-bar');
+    
+    if (container) {
+        // Update both arrows and progress bar
+        const updateArrows = () => {
+            const showArrows = container.scrollWidth > container.clientWidth;
+            arrows.forEach(arrow => arrow.style.display = showArrows ? 'flex' : 'none');
+            
+            if (arrows.length >= 2) {
+                arrows[0].style.opacity = container.scrollLeft > 0 ? 1 : 0.5;
+                arrows[1].style.opacity = container.scrollLeft < 
+                    (container.scrollWidth - container.clientWidth) ? 1 : 0.5;
+            }
+
+            // Update progress bar
+            if (progressBar) {
+                const maxScroll = container.scrollWidth - container.clientWidth;
+                if (maxScroll > 0) {
+                    const trackWidth = container.clientWidth;
+                    const progressPct = (container.scrollLeft / maxScroll) * 100;
+                    const maxPosition = 100 - (40 / trackWidth * 100);
+                    const newPosition = Math.min(Math.max(progressPct, 0), maxPosition);
+                    progressBar.style.left = newPosition + '%';
+                }
+            }
+        };
+
+        // Add arrow click handlers if arrows exist
+        arrows.length && arrows.forEach(arrow => {
+            arrow.addEventListener('click', () => {
+                const scrollAmount = container.clientWidth * 0.8;
+                container.scrollBy({
+                    left: arrow.classList.contains('left') ? -scrollAmount : scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        container.addEventListener('scroll', updateArrows);
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+    }
+})();
+</script>
