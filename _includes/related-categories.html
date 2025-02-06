@@ -2,7 +2,7 @@
     <div class="container">
         <h2 class="text-center mb-5">{{ include.title | default: 'Weitere Kategorien' }}</h2>
         <div class="row">
-            {% assign priority_slugs = "kreativ,werkzeuge,elektronik,outdoor,auto-zubehoer" | split: "," %}
+            {% assign priority_slugs = "werkzeuge,kreativ,elektronik,outdoor,auto-zubehoer" | split: "," %}
             {% assign sorted_categories = site.categories | sort: "title" %}
             {% assign priority_categories = "" | split: "" %}
             {% assign other_categories = "" | split: "" %}

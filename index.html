@@ -86,8 +86,7 @@ layout: home
             </div>
         </div>
     </section>
-
-    <section id="mieten" class="py-5">
+    <section id="mieten" class="py-5 bg-darker">
         <div class="container">
             <h2 class="text-center mb-5">Einfach & Sicher Mieten</h2>
             <div class="row g-4">
@@ -115,10 +114,10 @@ layout: home
             </div>
         </div>
     </section>
-
-    <section id="vermieten" class="py-5 bg-light">
+    {% include related-categories.html title="Entdecke unsere Kategorien" %}
+    <section id="vermieten" class="py-5 bg-darker">
         <div class="container">
-            <h2 class="text-center mb-5 text-dark">Verdiene mit deinen Sachen</h2>
+            <h2 class="text-center mb-5">Verdiene mit deinen Sachen</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card h-100 d-flex flex-column">
@@ -142,10 +141,8 @@ layout: home
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
-
-    {% include related-categories.html title="das kannst du mieten" %}
+    {% include blog-section.html title="Aktuelle Blog-Beiträge" %}
 </body>
 </html>

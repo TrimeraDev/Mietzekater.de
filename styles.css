@@ -790,6 +790,21 @@ footer a:hover {
     }
 }
 
+/* Alternating section backgrounds */
+.bg-darker {
+    background-color: #1a1a1a;
+}
+
+/* Ensure text remains visible */
+.bg-darker h2,
+.bg-darker p {
+    color: #fff;
+}
+
+.bg-darker .text-light-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
 /* Blog Post Content Styling */
 .blog-post {
     max-width: 720px;
