@@ -5,7 +5,7 @@ slug: auto-zubehoer
 description: Finde Dachboxen, Fahrradträger und Auto-Zubehör in deiner Nähe
 meta_description: "Auto-Zubehör günstig mieten in Aachen ✓ Dachboxen ✓ Fahrradträger ✓ Werkzeuge. Leihe Autozubehör von Nachbarn für deinen nächsten Trip mit Mietzekater."
 meta_keywords: "Auto-Zubehör Aachen, Dachbox mieten Aachen, Fahrradträger leihen, Autozubehör Verleih, KFZ Werkzeuge, Auto Equipment Aachen, lokaler Verleih"
-hero_image: /assets/categories/mietzekater-auto.webp
+hero_image: /assets/categories/mietzekater-auto-zubehoer.webp
 
 # Thought-provoking Questions
 renter_question: "Brauchst du spezielle Ausrüstung für dein Fahrzeug oder Autoreparatur?"
