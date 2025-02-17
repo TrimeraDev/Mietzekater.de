@@ -777,11 +777,11 @@ section {
 }
 
 .timeline-item:nth-child(odd) .timeline-date {
-    right: -120px;
+    right: -150px;
 }
 
 .timeline-item:nth-child(even) .timeline-date {
-    left: -120px;
+    left: -150px;
 }
 
 .timeline-item.current .timeline-point {
@@ -842,12 +842,13 @@ section {
     
     .timeline-date {
         left: 60px !important;
-        top: -30px !important;
+        top: -35px !important;
         transform: none !important;
+        font-size: 0.85em;
     }
 
     .timeline-content {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 }
 
