@@ -1,0 +1,74 @@
+{% if include.title %}
+<section class="timeline-section py-5 bg-darker">
+    <div class="container">
+        <h2 class="text-center mb-5">{{ include.title }}</h2>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            
+            <!-- Vergangenheit -->
+            <div class="timeline-item past" data-date="2023">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">Q1 2024</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/project-start.webp" alt="Projektstart von Mietzekater" class="timeline-image">
+                    <h3>Projektstart & Prototypenentwicklung</h3>
+                    <p>Die ersten Schritte von Mietzekater</p>
+                </div>
+            </div>
+
+            <!-- Januar 2025 Artikel -->
+            <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/die-sharing-economy-der-zukunft">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">28.01.2025</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/sharing-economy.webp" alt="Die Sharing Economy der Zukunft" class="timeline-image">
+                    <h3>Die Sharing Economy der Zukunft</h3>
+                    <p>Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/mietzekater-vs-temu">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">28.01.2025</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/mietzekater-vs-temu.webp" alt="Mietzekater vs. Temu & Co." class="timeline-image">
+                    <h3>Mietzekater vs. Temu & Co.</h3>
+                    <p>Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/wie-du-mit-mietzekater-geld-verdienst">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">28.01.2025</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/earn-money-renting.webp" alt="Verdiene Geld mit Mietzekater" class="timeline-image">
+                    <h3>Verdiene Geld mit Mietzekater</h3>
+                    <p>Nutze, was du hast! Erzeuge passives Einkommen mit deinen ungenutzten Gegenständen.</p>
+                </div>
+            </div>
+
+            <!-- Gegenwart -->
+            <div class="timeline-item current" data-date="17.02.2025">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">Q1 2025 - Now</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/development-phase.webp" alt="Entwicklungsphase" class="timeline-image">
+                    <h3>Entwicklungsphase & Gründung</h3>
+                    <p>Aktive Entwicklung der Plattform und Vorbereitung zum Launch</p>
+                </div>
+            </div>
+
+            <!-- Zukunft -->
+            <div class="timeline-item future" data-date="Q2 2025">
+                <div class="timeline-point"></div>
+                <div class="timeline-date">Q2 2025</div>
+                <div class="timeline-content">
+                    <img src="/assets/blog/app-launch.webp" alt="App Launch" class="timeline-image">
+                    <h3>App Launch</h3>
+                    <p>Offizieller Start der Mietzekater App</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
