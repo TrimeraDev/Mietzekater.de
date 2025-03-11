@@ -81,11 +81,42 @@
 
 <div class="bg-primary text-white text-center py-2">
     <div class="container">
-        <a href="/umfrage" class="text-white text-decoration-none">
-            Nimm an unserer Umfrage teil
+        <a href="#newsletter" class="text-white text-decoration-none" onclick="event.preventDefault(); document.getElementById('newsletter').scrollIntoView({behavior: 'smooth'});">
+            <span id="countdown-timer">Noch ... bis zum Launch</span>
         </a>
     </div>
 </div>
+<script>
+    // Set the launch date: May 9, 2025
+    const launchDate = new Date('2025-05-09T18:00:00').getTime();
+    
+    // Update the countdown every second
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+        
+        // Calculate days, hours, minutes and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        // Display the countdown
+        document.getElementById('countdown-timer').innerHTML = 
+            `🚀 in ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            
+        // If the countdown is over, display a different message
+        if (distance < 0) {
+            document.getElementById('countdown-timer').innerHTML = "Wir sind live!";
+        }
+    }
+    
+    // Update the countdown immediately
+    updateCountdown();
+    
+    // Update the countdown every second (1000 ms)
+    setInterval(updateCountdown, 1000);
+</script>
 
 
     
@@ -371,7 +402,7 @@ Telefon: +49 (0) 15222 985887</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <h5>Qucik Links</h5>
+                <h5>Quick Links</h5>
                 <ul class="footer-links">
                     <li><a href="/#features">So funktionierts</a></li>
                     <li><a href="/categories/werkzeuge/">Werkzeuge</a></li>
