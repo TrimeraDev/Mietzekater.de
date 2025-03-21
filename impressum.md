@@ -9,13 +9,13 @@ hero_image: /assets/legal/data-protection-hero.webp
 
 ## Verantwortliche für Mietzekater.de
 
-Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwortung für die Plattform bei:
+Simon & Vincent UG (haftungsbeschränkt, in gründung)
 
 ### Kontaktinformationen
 
 **Name:** Vincent Schulz & Simon Bilecen
 
-**E-Mail:** hallo@mietzekater.de
+**E-Mail:** hi@mietzekater.de
 
 **Adresse:** Paulusstraße 6, 52064 Aachen, Deutschland
 
@@ -30,4 +30,4 @@ Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber ver
 
 Wir sind derzeit nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
-*Stand: Januar 2025*
+*Stand: März 2025*

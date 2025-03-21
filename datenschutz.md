@@ -8,11 +8,10 @@ hero_image: /assets/legal/data-protection-hero.webp
 ### Datenschutzerklärung für Mietzekater.de
 
 #### Verantwortliche
-Da Mietzekater.de aktuell noch keine eingetragene Firma ist, liegt die Verantwortung für die Verarbeitung personenbezogener Daten bei:
-
-**Vincent Schulz**  
+**Simon & Vincent UG (haftungsbeschränkt, in gründung)**  
+Datenschutzbeauftragter: Vincent Schulz
 Adresse: Paulusstraße 6, 52064 Aachen  
-E-Mail: vincent.schulz@alumni.fh-aachen.de 
+E-Mail: hi@mietzekater.de 
 Telefon: +49 (0) 15222 985887  
 
 #### Allgemeines
