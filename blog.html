@@ -3,12 +3,32 @@ layout: base
 title: Mietzekater Blog
 permalink: /blog/
 ---
-<section class="hero blog-hero py-5 position-relative">
+<section class="hero category-hero blog-hero py-5 position-relative text-center" style="background-color: #F8F0E3;">
     <div class="container position-relative">
-        <div class="row align-items-center">
-            <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4 mb-4">Mietzekater Blog</h1>
-                <p class="lead text-light-muted">Teilen, Sparen, Nachhaltig Leben</p>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 position-relative">
+                <h1 class="display-4 mb-4" style="color: var(--text-dark);">Mietzekater Blog</h1>
+                <p class="lead" style="color: var(--text-muted);">Teilen, Sparen, Nachhaltig Leben</p>
+                
+                <div class="hero-features d-flex justify-content-center gap-3 mb-4">
+                    <div class="feature-item">
+                        <i class="fas fa-share-alt" style="color: var(--primary-dark);"></i>
+                        <span>Teilen</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-euro-sign" style="color: var(--primary-dark);"></i>
+                        <span>Sparen</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-leaf" style="color: var(--primary-dark);"></i>
+                        <span>Nachhaltig</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta d-flex flex-wrap gap-3">
+                    <a href="#newsletter" class="btn btn-primary btn-lg">Mitmachen</a>
+                    <a href="#recent-posts" class="btn btn-outline-secondary btn-lg">Aktuelle Beiträge</a>
+                </div>
             </div>
         </div>
     </div>

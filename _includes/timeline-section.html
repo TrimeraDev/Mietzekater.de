@@ -1,68 +1,68 @@
 {% if include.title %}
-<section class="timeline-section py-5 bg-darker">
+<section class="timeline-section py-5" style="background-color: var(--background-darker);">
     <div class="container">
-        <h2 class="text-center mb-5">{{ include.title }}</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">{{ include.title }}</h2>
         <div class="timeline">
-            <div class="timeline-line"></div>
+            <div class="timeline-line" style="background: linear-gradient(to bottom, var(--primary-light), var(--primary-dark));"></div>
             
             <!-- Vergangenheit -->
             <div class="timeline-item past" data-date="2023">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">August 2024</div>
-                <div class="timeline-content">
-                    <h3>Projektidee 💡</h3>
-                    <p>Es entsteht die Idee eines Mieter-Vermieter-Netzwerks.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">August 2024</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <h3 style="color: var(--text-dark);">Projektidee 💡</h3>
+                    <p style="color: var(--text-muted);">Es entsteht die Idee eines Mieter-Vermieter-Netzwerks.</p>
                 </div>
             </div>
 
             <!-- Januar 2025 Artikel -->
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/die-sharing-economy-der-zukunft">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/sharing-economy.webp" alt="Die Sharing Economy der Zukunft" class="timeline-image">
-                    <h3>Die Sharing Economy der Zukunft</h3>
-                    <p>Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/sharing-economy.webp" alt="Die Sharing Economy der Zukunft" class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Die Sharing Economy der Zukunft</h3>
+                    <p style="color: var(--text-muted);">Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
                 </div>
             </div>
 
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/mietzekater-vs-temu">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/mietzekater-vs-temu.webp" alt="Mietzekater vs. Temu & Co." class="timeline-image">
-                    <h3>Mietzekater vs. Temu & Co.</h3>
-                    <p>Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/mietzekater-vs-temu.webp" alt="Mietzekater vs. Temu & Co." class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Mietzekater vs. Temu & Co.</h3>
+                    <p style="color: var(--text-muted);">Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig.</p>
                 </div>
             </div>
 
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/wie-du-mit-mietzekater-geld-verdienst">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/earn-money-renting.webp" alt="Verdiene Geld mit Mietzekater" class="timeline-image">
-                    <h3>Verdiene Geld mit Mietzekater</h3>
-                    <p>Nutze, was du hast! Erzeuge passives Einkommen mit deinen ungenutzten Gegenständen.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/earn-money-renting.webp" alt="Verdiene Geld mit Mietzekater" class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Verdiene Geld mit Mietzekater</h3>
+                    <p style="color: var(--text-muted);">Nutze, was du hast! Erzeuge passives Einkommen mit deinen ungenutzten Gegenständen.</p>
                 </div>
             </div>
 
             <!-- Gegenwart -->
             <div class="timeline-item current" data-date="17.02.2025">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">Januar 2025 - Now</div>
-                <div class="timeline-content">
-                    <h3>Entwicklungsphase 🔧</h3>
-                    <p>Aktive Entwicklung der Plattform und Vorbereitung zum Launch.</p>
+                <div class="timeline-point" style="background-color: var(--primary-light); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">Januar 2025 - Now</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px; border: 2px solid var(--primary-light);">
+                    <h3 style="color: var(--text-dark);">Entwicklungsphase 🔧</h3>
+                    <p style="color: var(--text-muted);">Aktive Entwicklung der Plattform und Vorbereitung zum Launch.</p>
                 </div>
             </div>
 
             <!-- Zukunft -->
             <div class="timeline-item future" data-date="Q2 2025">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">Sommer 2025</div>
-                <div class="timeline-content">
-                    <h3>App Launch 🚀</h3>
-                    <p>Offizieller Start der Mietzekater App.</p>
+                <div class="timeline-point" style="background-color: var(--accent-brown); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">Sommer 2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px; opacity: 0.9;">
+                    <h3 style="color: var(--text-dark);">App Launch 🚀</h3>
+                    <p style="color: var(--text-muted);">Offizieller Start der Mietzekater App.</p>
                 </div>
             </div>
         </div>

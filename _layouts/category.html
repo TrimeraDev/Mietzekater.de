@@ -3,34 +3,35 @@ layout: base
 meta_description: {{ page.meta_description | default: page.description }}
 meta_keywords: {{ page.meta_keywords | default: page.title }}
 ---
-<section class="hero category-hero py-5 position-relative">
+<section class="hero category-hero py-5 position-relative" style="background-color: var(--background-dark);">
     <div class="category-hero-image">
         <div class="image-wrapper h-100">
-            <div class="image-overlay"></div>
-            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image">
+            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image" style="opacity: 1; object-fit: cover; width: 100%; height: 100%;">
         </div>
-    </div>
-    <div class="container position-relative">
+    </div>    <div class="container position-relative">
         <div class="row align-items-center position-relative">
             <div class="col-lg-6 position-relative">
-                <h1 class="display-4 mb-4">{{ page.title }} - Teilen statt Kaufen</h1>
+                <h1 class="display-4 mb-4" style="color: var(--text-dark);">{{ page.title }} - Teilen statt Kaufen</h1>
                 
                 {% if page.description %}
-                <div class="detailed-description">
+                <div class="detailed-description" style="color: var(--text-muted);">
                     {{ page.description }}
                 </div>
                 {% endif %}
 
                 <div class="hero-features d-flex gap-3 mb-4">
                     <div class="feature-item">
+                        <i style="color: var(--primary-dark);"></i>
                         <i class="fas fa-hand-holding-usd"></i>
                         <span>Günstig</span>
                     </div>
                     <div class="feature-item">
+                        <i style="color: var(--primary-dark);"></i>
                         <i class="fas fa-shield-alt"></i>
                         <span>Sicher</span>
                     </div>
                     <div class="feature-item">
+                        <i style="color: var(--primary-dark);"></i>
                         <i class="fas fa-map-marker-alt"></i>
                         <span>Lokal</span>
                     </div>
@@ -45,24 +46,24 @@ meta_keywords: {{ page.meta_keywords | default: page.title }}
     </div>
 </section>
 
-<section class="value-propositions py-5 bg-dark text-light">
+<section class="value-propositions py-5" style="background-color: var(--background-darker);">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center mb-5">Vorteile für Mieter und Vermieter</h2>
+                <h2 class="text-center mb-5" style="color: var(--text-dark);">Vorteile für Mieter und Vermieter</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <div class="card h-100">
+                <div class="card h-100" style="background-color: var(--background-lighter); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                     <div class="card-body">
-                        <h3 class="card-title text-theme-green mb-4">
+                        <h3 class="card-title mb-4" style="color: var(--primary-green);">
                             <i class="fas fa-user-friends me-2"></i>Für Mieter
                         </h3>
-                        <p class="text-muted mb-3 fst-italic">{{ page.renter_question }}</p>
+                        <p class="mb-3 fst-italic" style="color: var(--text-muted);">{{ page.renter_question }}</p>
                         <ul class="list-unstyled">
                             {% for benefit in page.renter_benefits %}
-                            <li class="mb-3">
+                            <li class="mb-3" style="color: var(--text-dark);">
                                 <span class="me-2">{{ benefit.emoji }}</span>
                                 <strong>{{ benefit.title }}:</strong> {{ benefit.description }}
                             </li>
@@ -72,15 +73,15 @@ meta_keywords: {{ page.meta_keywords | default: page.title }}
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card h-100">
+                <div class="card h-100" style="background-color: var(--background-lighter); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                     <div class="card-body">
-                        <h3 class="card-title text-theme-dark-green mb-4">
+                        <h3 class="card-title mb-4" style="color: var(--primary-green);">
                             <i class="fas fa-coins me-2"></i>Für Vermieter
                         </h3>
-                        <p class="text-muted mb-3 fst-italic">{{ page.lender_question }}</p>
+                        <p class="mb-3 fst-italic" style="color: var(--text-muted);">{{ page.lender_question }}</p>
                         <ul class="list-unstyled">
                             {% for benefit in page.lender_benefits %}
-                            <li class="mb-3">
+                            <li class="mb-3" style="color: var(--text-dark);">
                                 <span class="me-2">{{ benefit.emoji }}</span>
                                 <strong>{{ benefit.title }}:</strong> {{ benefit.description }}
                             </li>
@@ -94,21 +95,20 @@ meta_keywords: {{ page.meta_keywords | default: page.title }}
 </section>
 
 
-<section class="category-content">
+<section class="category-content py-5" style="background-color: var(--background-dark); color: var(--text-dark);">
     <div class="container">
-
         {{ content }}
     </div>
 </section>
 
 {% include related-categories.html title="Weitere Kategorien" %}
 
-<section id="items" class="py-5">
+<section id="items" class="py-5" style="background-color: var(--background-light);">
     <div class="container">
-        <h2 class="text-center mb-5">Verfügbare Artikel in {{ page.title }}</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Verfügbare Artikel in {{ page.title }}</h2>
         {% if page.items.size == 0 %}
         <div class="text-center">
-            <p class="lead mb-4">Unsere App ist bald online!</p>
+            <p class="lead mb-4" style="color: var(--text-muted);">Unsere App ist bald online!</p>
             <div class="cta-actions">
                 <a href="#newsletter" class="btn btn-success btn-lg me-3">App vormerken</a>
                 <a href="#categories" class="btn btn-outline-primary btn-lg">Andere Kategorien erkunden</a>
@@ -118,13 +118,13 @@ meta_keywords: {{ page.meta_keywords | default: page.title }}
         <div class="row g-4">
             {% for item in page.items %}
             <div class="col-md-4">
-                <div class="feature-card h-100 d-flex flex-column">
+                <div class="feature-card h-100 d-flex flex-column" style="background-color: var(--background-lighter); border-radius: 16px; border: 1px solid rgba(167, 207, 104, 0.2); box-shadow: 0 8px 16px rgba(0,0,0,0.05);">
                     <div class="feature-icon mb-3">{{ item.emoji | default: '✨' }}</div>
-                    <h3 class="mb-3">{{ item.name }}</h3>
-                    <p class="mb-0">{{ item.description }}</p>
+                    <h3 class="mb-3" style="color: var(--text-dark);">{{ item.name }}</h3>
+                    <p class="mb-0" style="color: var(--text-muted);">{{ item.description }}</p>
                     <div class="mt-auto pt-3">
-                        <span class="badge bg-primary">Ab {{ item.price }}€/Tag</span>
-                        <a href="#" class="btn btn-outline-primary btn-sm float-end">Mieten</a>
+                        <span class="badge" style="background-color: var(--primary-light); color: var(--text-dark);">Ab {{ item.price }}€/Tag</span>
+                        <a href="#" class="btn btn-primary btn-sm float-end">Mieten</a>
                     </div>
                 </div>
             </div>

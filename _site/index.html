@@ -40,40 +40,40 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles.css">
     
-    <!-- Category Page Styles -->
+    <!-- Category Page Styles (extends main styles) -->
     <link rel="stylesheet" href="/category.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg py-3" style="background-color: var(--background-dark);">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="/assets/MietzekaterIconTransparent-64x64.webp" alt="Mietzekater Logo" class="logo-img" style="height: 40px; width: auto;">
-            <span class="ms-2 d-none d-sm-inline">Mietzekater  -  Gemeinsam Mieten</span>
-            <span class="ms-2 d-sm-none">Mietzekater</span>
+            <img src="/assets/Mietzekater-paw-dark.png" alt="Mietzekater Logo" class="me-2" style="height: 60px; width: auto;">
+            <span class="ms-2 d-none d-sm-inline" style="color: var(--text-dark); font-weight: 600;">Mietzekater  -  Gemeinsam Mieten</span>
+            <span class="ms-2 d-sm-none" style="color: var(--text-dark); font-weight: 600;">Mietzekater</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: var(--primary-green);">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link px-3" href="/#categories">Kategorien</a>
+                    <a class="nav-link px-3" href="/#categories" style="color: var(--text-dark);">Kategorien</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/">Blog</a>
+                    <a class="nav-link px-3" href="/blog/" style="color: var(--text-dark);">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/">Vermieten</a>
+                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/" style="color: var(--text-dark);">Vermieten</a>
                 </li>
                 <li class="nav-item cta-nav-item">
-                    <a class="nav-link btn btn-outline-light px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
+                    <a class="nav-link btn btn-primary px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="bg-primary text-white text-center py-2">
+<div class="bg-primary text-white text-center py-2" style="background-color: var(--primary-green) !important;">
     <div class="container">
         <a href="#newsletter" class="text-white text-decoration-none" onclick="event.preventDefault(); document.getElementById('newsletter').scrollIntoView({behavior: 'smooth'});">
             <span id="countdown-timer">Noch ... bis zum Launch</span>
@@ -138,69 +138,34 @@
                     <p class="hero-subtitle">Spare Geld und Platz: Teile, leihe und entdecke – Gemeinsam nutzen, statt verstauben lassen.</p>
                     <div class="hero-features">
                         <div class="feature-item">
-                            <i class="fas fa-euro-sign"></i>
+                            <i class="fas fa-euro-sign" style="color: var(--primary-dark);"></i>
                             <span>Günstig</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-shield-alt"></i>
+                            <i class="fas fa-shield-alt" style="color: var(--primary-dark);"></i>
                             <span>Sicher</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" style="color: var(--primary-dark);"></i>
                             <span>Lokal</span>
                         </div>
                     </div>
                     <div class="hero-buttons d-flex flex-wrap gap-3">
                         <a href="#newsletter" class="btn btn-primary btn-lg px-4">App vormerken</a>
-                        <a href="#vermieten" class="btn btn-outline-light btn-lg px-4">So funktioniert's</a>
+                        <a href="#vermieten" class="btn btn-outline-dark btn-lg px-4" style="color: var(--text-dark); border-color: var(--text-dark);">So funktioniert's</a>
                     </div>
                 </div>
                 <div class="col-lg-6 hero-right">
                     <div class="phone-container">
-                        <div class="floating-categories d-none d-lg-block">
-                            <div class="floating-icon" data-tooltip="Werkzeuge für dein Projekt">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Transport und Mobilität">
-                                <i class="fas fa-car"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Party und Events">
-                                <i class="fas fa-glass-cheers"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Kameras und Elektronik">
-                                <i class="fas fa-camera"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Sport und Freizeit">
-                                <i class="fas fa-baseball-ball"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Camping und Outdoor">
-                                <i class="fas fa-campground"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Locations und Räume">
-                                <i class="fas fa-store"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Spiele und Gaming">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Haushaltsgeräte">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Multimedia und Technik">
-                                <i class="fas fa-headphones"></i>
-                            </div>
-                            <div class="floating-icon" data-tooltip="Fahrräder">
-                                <i class="fas fa-bicycle"></i>
-                            </div>
-                        </div>
                         <img src="assets/MietzekaterApp.webp" alt="Mietzekater App" class="hero-image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="mieten" class="py-5 bg-darker">
+    <section id="mieten" class="py-5" style="background-color: var(--background-darker);">
         <div class="container">
-            <h2 class="text-center mb-5">Einfach & Sicher Mieten</h2>
+            <h2 class="text-center mb-5" style="color: var(--text-dark);">Einfach & Sicher Mieten</h2>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="feature-card h-100 d-flex flex-column">
@@ -226,9 +191,9 @@
             </div>
         </div>
     </section>
-    <section class="related-categories py-5" id="categories">
+    <section class="related-categories py-5" id="categories" style="background-color: var(--background-darker);">
     <div class="container">
-        <h2 class="text-center mb-5">Entdecke unsere Kategorien</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Entdecke unsere Kategorien</h2>
         <div class="row">
             
             
@@ -290,11 +255,11 @@
                 
                 <div class="col-md-4 mb-3">
                     <a href="/categories/werkzeuge/" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-werkzeuge.webp" alt="Werkzeuge Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">Werkzeuge</h3>
-                                <p class="card-text text-light-muted">Werkzeuge für jeden Bedarf - von Heimwerken bis Profi-Reparaturen</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">Werkzeuge</h3>
+                                <p class="card-text" style="color: var(--text-muted);">Werkzeuge für jeden Bedarf - von Heimwerken bis Profi-Reparaturen</p>
                             </div>
                         </div>
                     </a>
@@ -304,11 +269,11 @@
                 
                 <div class="col-md-4 mb-3">
                     <a href="/categories/kreativ/" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-kreativ.webp" alt="Kreativ Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">Kreativ</h3>
-                                <p class="card-text text-light-muted">Kreativausrüstung für deine DIY-Projekte - von Nähen bis Töpfern</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">Kreativ</h3>
+                                <p class="card-text" style="color: var(--text-muted);">Kreativausrüstung für deine DIY-Projekte - von Nähen bis Töpfern</p>
                             </div>
                         </div>
                     </a>
@@ -318,11 +283,11 @@
                 
                 <div class="col-md-4 mb-3">
                     <a href="/categories/elektronik/" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-elektronik.webp" alt="Elektronik Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">Elektronik</h3>
-                                <p class="card-text text-light-muted">Elektronik für jeden Bedarf - von Arbeit bis Gaming</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">Elektronik</h3>
+                                <p class="card-text" style="color: var(--text-muted);">Elektronik für jeden Bedarf - von Arbeit bis Gaming</p>
                             </div>
                         </div>
                     </a>
@@ -332,11 +297,11 @@
                 
                 <div class="col-md-4 mb-3">
                     <a href="/categories/outdoor/" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-outdoor.webp" alt="Outdoor Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">Outdoor</h3>
-                                <p class="card-text text-light-muted">Outdoor-Equipment für jedes Abenteuer - vom Camping bis zum Wassersport</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">Outdoor</h3>
+                                <p class="card-text" style="color: var(--text-muted);">Outdoor-Equipment für jedes Abenteuer - vom Camping bis zum Wassersport</p>
                             </div>
                         </div>
                     </a>
@@ -346,11 +311,11 @@
                 
                 <div class="col-md-4 mb-3">
                     <a href="/categories/auto-zubehoer/" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-auto-zubehoer.webp" alt="Auto-Zubehör Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">Auto-Zubehör</h3>
-                                <p class="card-text text-light-muted">Auto-Zubehör für jeden Bedarf - von Pflege bis Reparatur</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">Auto-Zubehör</h3>
+                                <p class="card-text" style="color: var(--text-muted);">Auto-Zubehör für jeden Bedarf - von Pflege bis Reparatur</p>
                             </div>
                         </div>
                     </a>
@@ -358,14 +323,14 @@
                 
             
         </div>
-        <div class="scroll-arrow left">
+        <div class="scroll-arrow left" style="background-color: var(--background-light); color: var(--primary-dark); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
         </div>
-        <div class="scroll-arrow right">
+        <div class="scroll-arrow right" style="background-color: var(--background-light); color: var(--primary-dark); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
         </div>
         <div class="progress-container">
-            <div class="progress-bar"></div>
+            <div class="progress-bar" style="background-color: var(--primary-green);"></div>
         </div>
     </div>
 </section>
@@ -447,23 +412,23 @@
             </div>
         </div>
     </section>
-    <section class="blog-posts py-5">
+    <section class="blog-posts py-5" style="background-color: #F8F0E3;">
     <div class="container">
-        <h2 class="text-center mb-5">Aktuelle Blog-Beiträge</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Aktuelle Blog-Beiträge</h2>
         <div class="row">
             
             <div class="col-md-4 mb-4">
                 <a href="/blog/wie-du-mit-mietzekater-geld-verdienst/" class="text-decoration-none">
-                    <div class="card blog-card h-100">
+                    <div class="card blog-card h-100" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05);">
                         
                         <img src="/assets/blog/earn-money-renting.webp" class="card-img-top" alt="Verdiene Geld mit Mietzekater: Nutze, was du hast!">
                         
                         <div class="card-body">
-                            <h3 class="card-title h5">Verdiene Geld mit Mietzekater: Nutze, was du hast!</h3>
+                            <h3 class="card-title h5" style="color: var(--text-dark);">Verdiene Geld mit Mietzekater: Nutze, was du hast!</h3>
                             
-                            <p class="card-text text-light-muted">Wie du mit deinen ungenutzten Werkzeugen, Gadgets und mehr ein passives Einkommen erzielst.</p>
+                            <p class="card-text" style="color: var(--text-muted);">Wie du mit deinen ungenutzten Werkzeugen, Gadgets und mehr ein passives Einkommen erzielst.</p>
                             
-                            <div class="card-footer bg-transparent border-0 text-light-muted">
+                            <div class="card-footer bg-transparent border-0" style="color: var(--text-muted);">
                                 <small>28.01.2025</small>
                             </div>
                         </div>
@@ -473,16 +438,16 @@
             
             <div class="col-md-4 mb-4">
                 <a href="/blog/mietzekater-vs-temu/" class="text-decoration-none">
-                    <div class="card blog-card h-100">
+                    <div class="card blog-card h-100" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05);">
                         
                         <img src="/assets/blog/mietzekater-vs-temu-2.webp" class="card-img-top" alt="Mietzekater vs. Temu & Co.">
                         
                         <div class="card-body">
-                            <h3 class="card-title h5">Mietzekater vs. Temu & Co.</h3>
+                            <h3 class="card-title h5" style="color: var(--text-dark);">Mietzekater vs. Temu & Co.</h3>
                             
-                            <p class="card-text text-light-muted">Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig. Wie wir bessere Angebote ermöglichen.</p>
+                            <p class="card-text" style="color: var(--text-muted);">Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig. Wie wir bessere Angebote ermöglichen.</p>
                             
-                            <div class="card-footer bg-transparent border-0 text-light-muted">
+                            <div class="card-footer bg-transparent border-0" style="color: var(--text-muted);">
                                 <small>28.01.2025</small>
                             </div>
                         </div>
@@ -492,16 +457,16 @@
             
             <div class="col-md-4 mb-4">
                 <a href="/blog/die-sharing-economy-der-zukunft/" class="text-decoration-none">
-                    <div class="card blog-card h-100">
+                    <div class="card blog-card h-100" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05);">
                         
                         <img src="/assets/blog/sharing-economy.webp" class="card-img-top" alt="Die Sharing Economy der Zukunft: Einfach, Sicher und Günstig">
                         
                         <div class="card-body">
-                            <h3 class="card-title h5">Die Sharing Economy der Zukunft: Einfach, Sicher und Günstig</h3>
+                            <h3 class="card-title h5" style="color: var(--text-dark);">Die Sharing Economy der Zukunft: Einfach, Sicher und Günstig</h3>
                             
-                            <p class="card-text text-light-muted">Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
+                            <p class="card-text" style="color: var(--text-muted);">Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
                             
-                            <div class="card-footer bg-transparent border-0 text-light-muted">
+                            <div class="card-footer bg-transparent border-0" style="color: var(--text-muted);">
                                 <small>28.01.2025</small>
                             </div>
                         </div>
@@ -514,70 +479,70 @@
 </section>
 
     
-<section class="timeline-section py-5 bg-darker">
+<section class="timeline-section py-5" style="background-color: var(--background-darker);">
     <div class="container">
-        <h2 class="text-center mb-5">Unsere Meilensteine</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Unsere Meilensteine</h2>
         <div class="timeline">
-            <div class="timeline-line"></div>
+            <div class="timeline-line" style="background: linear-gradient(to bottom, var(--primary-light), var(--primary-dark));"></div>
             
             <!-- Vergangenheit -->
             <div class="timeline-item past" data-date="2023">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">August 2024</div>
-                <div class="timeline-content">
-                    <h3>Projektidee 💡</h3>
-                    <p>Es entsteht die Idee eines Mieter-Vermieter-Netzwerks.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">August 2024</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <h3 style="color: var(--text-dark);">Projektidee 💡</h3>
+                    <p style="color: var(--text-muted);">Es entsteht die Idee eines Mieter-Vermieter-Netzwerks.</p>
                 </div>
             </div>
 
             <!-- Januar 2025 Artikel -->
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/die-sharing-economy-der-zukunft">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/sharing-economy.webp" alt="Die Sharing Economy der Zukunft" class="timeline-image">
-                    <h3>Die Sharing Economy der Zukunft</h3>
-                    <p>Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/sharing-economy.webp" alt="Die Sharing Economy der Zukunft" class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Die Sharing Economy der Zukunft</h3>
+                    <p style="color: var(--text-muted);">Wie Mietzekater die Zukunft des Teilens neu definiert: Lokales Mieten so einfach wie nie.</p>
                 </div>
             </div>
 
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/mietzekater-vs-temu">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/mietzekater-vs-temu.webp" alt="Mietzekater vs. Temu & Co." class="timeline-image">
-                    <h3>Mietzekater vs. Temu & Co.</h3>
-                    <p>Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/mietzekater-vs-temu.webp" alt="Mietzekater vs. Temu & Co." class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Mietzekater vs. Temu & Co.</h3>
+                    <p style="color: var(--text-muted);">Wir sagen Temu & Co. den Kampf an! Günstig, Lokal, Nachhaltig.</p>
                 </div>
             </div>
 
             <div class="timeline-item past" data-date="28.01.2025" data-post="/blog/wie-du-mit-mietzekater-geld-verdienst">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">28.01.2025</div>
-                <div class="timeline-content">
-                    <img src="/assets/blog/earn-money-renting.webp" alt="Verdiene Geld mit Mietzekater" class="timeline-image">
-                    <h3>Verdiene Geld mit Mietzekater</h3>
-                    <p>Nutze, was du hast! Erzeuge passives Einkommen mit deinen ungenutzten Gegenständen.</p>
+                <div class="timeline-point" style="background-color: var(--primary-green); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">28.01.2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px;">
+                    <img src="/assets/blog/earn-money-renting.webp" alt="Verdiene Geld mit Mietzekater" class="timeline-image" style="border-radius: 8px;">
+                    <h3 style="color: var(--text-dark);">Verdiene Geld mit Mietzekater</h3>
+                    <p style="color: var(--text-muted);">Nutze, was du hast! Erzeuge passives Einkommen mit deinen ungenutzten Gegenständen.</p>
                 </div>
             </div>
 
             <!-- Gegenwart -->
             <div class="timeline-item current" data-date="17.02.2025">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">Januar 2025 - Now</div>
-                <div class="timeline-content">
-                    <h3>Entwicklungsphase 🔧</h3>
-                    <p>Aktive Entwicklung der Plattform und Vorbereitung zum Launch.</p>
+                <div class="timeline-point" style="background-color: var(--primary-light); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">Januar 2025 - Now</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px; border: 2px solid var(--primary-light);">
+                    <h3 style="color: var(--text-dark);">Entwicklungsphase 🔧</h3>
+                    <p style="color: var(--text-muted);">Aktive Entwicklung der Plattform und Vorbereitung zum Launch.</p>
                 </div>
             </div>
 
             <!-- Zukunft -->
             <div class="timeline-item future" data-date="Q2 2025">
-                <div class="timeline-point"></div>
-                <div class="timeline-date">Sommer 2025</div>
-                <div class="timeline-content">
-                    <h3>App Launch 🚀</h3>
-                    <p>Offizieller Start der Mietzekater App.</p>
+                <div class="timeline-point" style="background-color: var(--accent-brown); border: 3px solid var(--background-light);"></div>
+                <div class="timeline-date" style="color: var(--primary-dark); font-weight: 600;">Sommer 2025</div>
+                <div class="timeline-content" style="background-color: var(--background-light); box-shadow: 0 4px 12px rgba(0,0,0,0.05); border-radius: 12px; opacity: 0.9;">
+                    <h3 style="color: var(--text-dark);">App Launch 🚀</h3>
+                    <p style="color: var(--text-muted);">Offizieller Start der Mietzekater App.</p>
                 </div>
             </div>
         </div>
@@ -605,31 +570,31 @@
 </html>
 
 
-    <section id="newsletter" class="py-5">
+    <section id="newsletter" class="py-5" style="background-color: var(--accent-brown);">
     <div class="container">
-        <h2 class="text-center mb-5">Mach mit!</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Mach mit!</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="custom-dark-card">
-                    <h3 class="mb-4">Sei von Anfang an dabei!</h3>
-                    <div id="success-message" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+                <div class="custom-dark-card" style="background-color: var(--background-light); border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                    <h3 class="mb-4" style="color: var(--primary-dark);">Sei von Anfang an dabei!</h3>
+                    <div id="success-message" class="alert alert-success alert-dismissible fade" role="alert" style="display: none; background-color: rgba(167, 207, 104, 0.2); border-color: var(--primary-green); color: var(--text-dark);">
                         <strong>Vielen Dank!</strong> Wir halten dich auf dem Laufenden. 🐱
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <form id="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbz684ajMaR19PfcsvACNop3R3SYLBmXr5HCXo0RXqCSssihLRf3etfKK7IEmqi8BMzvUg/exec" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Mail-Adresse</label>
+                            <label for="email" class="form-label" style="color: var(--text-dark);">E-Mail-Adresse</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="beta-tester" name="beta-tester">
-                            <label class="form-check-label" for="beta-tester">Ich möchte Beta-Tester werden</label>
+                            <input type="checkbox" class="form-check-input" id="beta-tester" name="beta-tester" style="border-color: var(--primary-green);">
+                            <label class="form-check-label" for="beta-tester" style="color: var(--text-dark);">Ich möchte Beta-Tester werden</label>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
-                            <label class="form-check-label" for="newsletter">Ich möchte den Newsletter erhalten</label>
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" style="border-color: var(--primary-green);">
+                            <label class="form-check-label" for="newsletter" style="color: var(--text-dark);">Ich möchte den Newsletter erhalten</label>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Benachrichtige mich beim Launch</button>
+                        <button type="submit" class="btn btn-primary w-100" style="background-color: var(--primary-green); border-color: var(--primary-green); border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Benachrichtige mich beim Launch</button>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 </div>
@@ -646,7 +611,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="footer-brand d-flex align-items-center">
-                    <img src="/assets/MietzekaterIconTransparent-64x64.webp" alt="Mietzekater Logo" class="footer-logo me-3" style="height: 50px; width: auto;">
+                    <img src="/assets/Mietzekater-paw-dark.png" alt="Mietzekater Logo" class="footer-logo me-3" style="height: 55px; width: auto;">
                     <div>
                         <h4 class="mb-0">Mietzekater</h4>
                         <p class="mb-0">Leihen, Teilen, Sparen in deiner Nachbarschaft</p>
@@ -665,24 +630,23 @@
             </div>
             <div class="col-md-4">
                 <h5>Du hast ein Anliegen? Sag Hallo : )</h5>
-                <i class="fas fa-envelope"></i> <a href="mailto:hi@mietzekater.de" class="text-white text-decoration-none">hi@mietzekater.de</a>
+                <i class="fas fa-envelope"></i> <a href="mailto:hi@mietzekater.de">hi@mietzekater.de</a>
             </div>
             <div class="col-md-4">
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <a href="https://www.aachen.digital/" target="_blank">
                         <img src="/assets/footer/hub-badge_black_de_wir sind dabei.webp" alt="Wir sind dabei bei Aachen Digital" class="hub-badge" style="width: 150px;">
                     </a>
-                    <div style="background: #f8f9fa; padding: 10px;">
-                        <a href="https://gruendungszentrum.fh-aachen.de/" target="_blank">
-                            <img src="/assets/footer/GZ - FH Aachen.png" alt="Gründungszentrum FH Aachen" class="gz-logo" style="width: 120px;">
-                        </a>
-                    </div>
+                    <div style="display: flex; gap: 60px;"></div>
+                    <a href="https://gruendungszentrum.fh-aachen.de/" target="_blank">
+                        <img src="/assets/footer/GZ - FH Aachen.png" alt="Gründungszentrum FH Aachen" class="gz-logo" style="width: 200px;">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="footer-social text-center mb-4">
-            <a href="https://www.tiktok.com/@simon_vincent01" target="_blank" class="social-icon" style="font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/simon_und_vincent" target="_blank" class="social-icon" style="font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@simon_vincent01" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/simon_und_vincent" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="footer-bottom text-center">
             <p>&copy; 2025 Mietzekater. Alle Rechte vorbehalten.</p>

@@ -1,43 +1,14 @@
-:root {
-    --primary-green: #75A33D;
-    --primary-dark: #567A2E;
-    --primary-light: #98C55F;
-    --background-dark: #121212;
-    --off-white: #f4f4f4;
-    --off-white-text: #e0e0e0;
-    --text-light: #cccccc;
-}
-
-
-/* Ensure category hero has same styling as main hero */
+/* Category Hero Styling - extends the main styles from styles.css */
 .category-hero {
     position: relative;
     padding: 2rem 0;
-    background: linear-gradient(to right, 
-        rgba(18, 18, 18, 1) 50%, 
-        rgba(152, 197, 95, 0) 70%
-    );
+    background-color: var(--background-dark);
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-.category-hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    width: 100%;
-    height: 200%;
-    background: radial-gradient(
-        circle at 70% 50%, 
-        rgba(152, 197, 95, 0.4) 0%, 
-        rgba(152, 197, 95, 0.05) 50%, 
-        transparent 70%
-    );
-    transform: translateX(-50%);
-    z-index: 1;
-}
+
 
 .category-hero .container {
     position: relative;
@@ -85,19 +56,16 @@
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
-    background: linear-gradient(120deg, var(--primary-light), #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
+    color: var(--text-dark);
 }
 
 .category-hero .hero-subtitle {
-    color: var(--text-light);
+    color: var(--text-muted);
     margin-bottom: 1rem;
 }
 
 .category-hero .hero-features {
-    color: var(--off-white-text);
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
@@ -108,7 +76,7 @@
 }
 
 .category-hero .hero-features .feature-item i {
-    color: var(--off-white);
+    color: var(--primary-dark);
     margin-right: 0.5rem;
 }
 
@@ -119,11 +87,12 @@
 
 /* Ensure feature cards match index page */
 .feature-card {
-    background: rgba(18, 18, 18, 0.7);
-    border: 1px solid var(--primary-green);
+    background: var(--background-light);
+    border: 1px solid rgba(167, 207, 104, 0.2);
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
 }
 
 .feature-card:hover {
@@ -137,12 +106,12 @@
 }
 
 .feature-card h3 {
-    color: var(--off-white);
+    color: var(--text-dark);
     margin-bottom: 10px;
 }
 
 .feature-card p {
-    color: var(--text-light);
+    color: var(--text-muted);
     margin-bottom: 15px;
 }
 
@@ -152,7 +121,7 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: 50%; /* Exactly half the width */
+    width: 50%;
 }
 
 .category-hero-image .image-wrapper {
@@ -165,11 +134,28 @@
 .category-hero-image .hero-image {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
+}
+
+/* Fade effect for both category and blog hero images */
+.category-hero-image::before,
+.blog-hero .category-hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(to right, 
+        var(--background-dark) 0%,
+        var(--background-dark) 10%,
+        transparent 100%
+    );
+    z-index: 3;
 }
 
 .category-hero-image .image-wrapper::before {
@@ -179,55 +165,53 @@
 /* Medium and below: image behaves as a full-width banner */
 @media (max-width: 992px) {
     .category-hero-image {
-        position: relative; /* Detach from right-side layout */
-        top: 0;
-        left: 0;
-        width: 100%; /* Full width */
-        height: 200px; /* Banner height */
-        z-index: 0;
-    }
-    .category-hero-image::after {
-        content: '';
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9) 80%);
-        pointer-events: none; /* Allow interactions with content beneath */
-        z-index: 2; /* Ensure the overlay appears above the image */
+        height: 200px;
+        z-index: 0;
     }
+
 }
 
 /* Dark mode value propositions section */
-.value-propositions.bg-dark {
+.value-propositions {
     background-color: var(--background-dark) !important;
 }
 
-.value-propositions.bg-dark h2 {
-    color: var(--off-white-text);
+.value-propositions h2 {
+    color: var(--text-dark);
 }
 
-.value-propositions.bg-dark .card {
-    background-color: rgba(30, 30, 30, 0.8);
-    border: 1px solid rgba(100, 100, 100, 0.2);
-    color: var(--text-light);
+.value-propositions .card {
+    background-color: var(--background-light);
+    border: 1px solid rgba(167, 207, 104, 0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
 }
 
-.value-propositions.bg-dark .card-title {
-    color: var(--off-white-text);
+.value-propositions .card .card-title {
+    color: var(--text-dark);
 }
 
-/* Custom color classes for dark mode value propositions */
-.text-theme-green {
-    color: var(--primary-light) !important;
+/* Custom color classes for watercolor theme */
+.bg-darker {
+    background-color: var(--background-darker) !important;
 }
 
-.text-theme-dark-green {
-    color: var(--primary-green) !important;
+.bg-darker h2 {
+    color: var(--text-dark);
 }
 
 /* Related Categories Card Styles */
+.related-categories {
+    background-color: var(--background-dark) !important;
+}
+
+.related-categories h2 {
+    color: var(--text-dark);
+}
+
 .related-categories .category-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
@@ -244,19 +228,17 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.related-categories .category-card:hover img {
-    transform: scale(1.1);
+.related-categories .category-card {
+    background-color: var(--background-light);
+    border: 1px solid rgba(167, 207, 104, 0.2);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
 }
 
-/* Dark mode adjustments */
-.related-categories.bg-dark .category-card {
-    background-color: rgba(30, 30, 30, 0.8);
-    border: 1px solid rgba(100, 100, 100, 0.2);
+.related-categories .category-card .card-title {
+    color: var(--text-dark);
 }
 
-.related-categories.bg-dark .category-card .card-title {
-    color: var(--off-white-text);
-}
+/* No dark mode - watercolor theme only */
 
 /* CTA Actions Styling */
 .cta-actions .btn-success {
@@ -296,7 +278,7 @@
 .category-content h4,
 .category-content h5,
 .category-content h6 {
-    color: var(--off-white-text);
+    color: var(--text-dark);
     margin-bottom: 1.5rem;
 }
 
@@ -312,12 +294,12 @@
 
 .category-content ul,
 .category-content ol {
-    color: var(--text-light);
+    color: var(--text-dark);
     padding-left: 2rem;
 }
 
 .category-content a {
-    color: var(--primary-light);
+    color: var(--primary-dark);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -374,12 +356,12 @@
     margin-bottom: 15px;
 }
 
-.category-content .detailed-description {
+.category-content blockquote {
     background-color: var(--background-light);
     border-left: 4px solid var(--primary-green);
     padding: 20px;
     margin: 30px 0;
-    color: var(--text-light);
+    color: var(--text-muted);
     font-style: italic;
     line-height: 1.6;
     border-radius: 0 8px 8px 0;
@@ -459,7 +441,7 @@
     position: relative;
     padding-left: 20px;
     margin-bottom: 10px;
-    color: var(--text-light);
+    color: var(--text-muted);
 }
 
 .use-case-card ul li::before {
@@ -468,19 +450,6 @@
     position: absolute;
     left: 0;
     font-weight: bold;
-}
-
-/* Blog Hero Styling */
-.blog-hero {
-    position: relative;
-    padding: 2rem 0;
-    background: linear-gradient(to right, 
-        rgba(18, 18, 18, 1) 50%, 
-        rgba(152, 197, 95, 0) 75%
-    );
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
 }
 
 .blog-hero::before {
@@ -815,11 +784,11 @@ body, html {
     
     .scroll-arrow.left { left: 10px; }
     .scroll-arrow.right { right: 10px; }
-    .scroll-arrow:hover { background: rgba(0,0,0,0.8); }
+    .scroll-arrow:hover { background: rgba(141, 187, 79, 0.8); }
     .scroll-arrow svg {
         width: 24px;
         height: 24px;
-        fill: white;
+        fill: var(--background-light);
     }
 }
 
@@ -867,18 +836,19 @@ body, html {
 }
 
 @media (min-width: 769px) {
-    /* ... rest of desktop styles ... */
+    /* Desktop styles */
     .scroll-arrow {
         display: flex;  /* Only show on desktop */
         align-items: center;
         justify-content: center;
+        background: rgba(141, 187, 79, 0.6);
     }
 }
 
 /* Progress indicator styles for all screen sizes */
 #categories .progress-container {
     height: 4px;
-    background: #444;
+    background: #E0E0E0;
     border-radius: 2px;
     margin-top: 0.5rem;
     overflow: visible;
@@ -887,7 +857,7 @@ body, html {
 #categories .progress-container .progress-bar {
     width: 40px;
     height: 100%;
-    background: #888;
+    background: var(--primary-green);
     border-radius: 2px;
     position: absolute;
     transition: left 0.15s ease-out;
@@ -935,7 +905,7 @@ body, html {
         transform: translateY(-50%);
         width: 40px;
         height: 40px;
-        background: rgba(0,0,0,0.6);
+        background: rgba(141, 187, 79, 0.6);
         border-radius: 50%;
         cursor: pointer;
         z-index: 2;
@@ -947,10 +917,10 @@ body, html {
      
     .scroll-arrow.left { left: 10px; }
     .scroll-arrow.right { right: 10px; }
-    .scroll-arrow:hover { background: rgba(0,0,0,0.8); }
+    .scroll-arrow:hover { background: rgba(141, 187, 79, 0.8); }
     .scroll-arrow svg {
         width: 24px;
         height: 24px;
-        fill: white;
+        fill: var(--background-light);
     }
 }

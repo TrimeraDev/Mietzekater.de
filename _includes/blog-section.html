@@ -1,20 +1,20 @@
-<section class="blog-posts py-5">
+<section class="blog-posts py-5" style="background-color: #F8F0E3;">
     <div class="container">
-        <h2 class="text-center mb-5">{{ include.title | default: 'Mietzekater Blog' }}</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">{{ include.title | default: 'Mietzekater Blog' }}</h2>
         <div class="row">
             {% for post in site.posts %}
             <div class="col-md-4 mb-4">
                 <a href="{{ post.url }}" class="text-decoration-none">
-                    <div class="card blog-card h-100">
+                    <div class="card blog-card h-100" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05);">
                         {% if post.hero_image %}
                         <img src="{{ post.hero_image }}" class="card-img-top" alt="{{ post.title }}">
                         {% endif %}
                         <div class="card-body">
-                            <h3 class="card-title h5">{{ post.title }}</h3>
+                            <h3 class="card-title h5" style="color: var(--text-dark);">{{ post.title }}</h3>
                             {% if post.description %}
-                            <p class="card-text text-light-muted">{{ post.description }}</p>
+                            <p class="card-text" style="color: var(--text-muted);">{{ post.description }}</p>
                             {% endif %}
-                            <div class="card-footer bg-transparent border-0 text-light-muted">
+                            <div class="card-footer bg-transparent border-0" style="color: var(--text-muted);">
                                 <small>{{ post.date | date: "%d.%m.%Y" }}</small>
                             </div>
                         </div>

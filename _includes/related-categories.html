@@ -1,6 +1,6 @@
-<section class="related-categories py-5" id="categories">
+<section class="related-categories py-5" id="categories" style="background-color: var(--background-darker);">
     <div class="container">
-        <h2 class="text-center mb-5">{{ include.title | default: 'Weitere Kategorien' }}</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">{{ include.title | default: 'Weitere Kategorien' }}</h2>
         <div class="row">
             {% assign priority_slugs = "werkzeuge,kreativ,elektronik,outdoor,auto-zubehoer" | split: "," %}
             {% assign sorted_categories = site.categories | sort: "title" %}
@@ -28,11 +28,11 @@
                 {% if category.slug != page.slug %}
                 <div class="col-md-4 mb-3">
                     <a href="{{ category.url }}" class="text-decoration-none">
-                        <div class="card category-card">
+                        <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
                             <img src="/assets/categories/mietzekater-{{ category.slug }}.webp" alt="{{ category.title }} Category" class="card-img-top">
                             <div class="card-body">
-                                <h3 class="card-title">{{ category.title }}</h3>
-                                <p class="card-text text-light-muted">{{ category.short_description }}</p>
+                                <h3 class="card-title" style="color: var(--primary-dark);">{{ category.title }}</h3>
+                                <p class="card-text" style="color: var(--text-muted);">{{ category.short_description }}</p>
                             </div>
                         </div>
                     </a>
@@ -40,14 +40,14 @@
                 {% endif %}
             {% endfor %}
         </div>
-        <div class="scroll-arrow left">
+        <div class="scroll-arrow left" style="background-color: var(--background-light); color: var(--primary-dark); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
         </div>
-        <div class="scroll-arrow right">
+        <div class="scroll-arrow right" style="background-color: var(--background-light); color: var(--primary-dark); box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
         </div>
         <div class="progress-container">
-            <div class="progress-bar"></div>
+            <div class="progress-bar" style="background-color: var(--primary-green);"></div>
         </div>
     </div>
 </section>

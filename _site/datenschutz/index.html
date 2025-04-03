@@ -40,40 +40,40 @@
     <!-- Main Styles -->
     <link rel="stylesheet" href="/styles.css">
     
-    <!-- Category Page Styles -->
+    <!-- Category Page Styles (extends main styles) -->
     <link rel="stylesheet" href="/category.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg py-3" style="background-color: var(--background-dark);">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="/assets/MietzekaterIconTransparent-64x64.webp" alt="Mietzekater Logo" class="logo-img" style="height: 40px; width: auto;">
-            <span class="ms-2 d-none d-sm-inline">Mietzekater  -  Gemeinsam Mieten</span>
-            <span class="ms-2 d-sm-none">Mietzekater</span>
+            <img src="/assets/Mietzekater-paw-dark.png" alt="Mietzekater Logo" class="me-2" style="height: 60px; width: auto;">
+            <span class="ms-2 d-none d-sm-inline" style="color: var(--text-dark); font-weight: 600;">Mietzekater  -  Gemeinsam Mieten</span>
+            <span class="ms-2 d-sm-none" style="color: var(--text-dark); font-weight: 600;">Mietzekater</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: var(--primary-green);">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link px-3" href="/#categories">Kategorien</a>
+                    <a class="nav-link px-3" href="/#categories" style="color: var(--text-dark);">Kategorien</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/">Blog</a>
+                    <a class="nav-link px-3" href="/blog/" style="color: var(--text-dark);">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/">Vermieten</a>
+                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/" style="color: var(--text-dark);">Vermieten</a>
                 </li>
                 <li class="nav-item cta-nav-item">
-                    <a class="nav-link btn btn-outline-light px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
+                    <a class="nav-link btn btn-primary px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 
-<div class="bg-primary text-white text-center py-2">
+<div class="bg-primary text-white text-center py-2" style="background-color: var(--primary-green) !important;">
     <div class="container">
         <a href="#newsletter" class="text-white text-decoration-none" onclick="event.preventDefault(); document.getElementById('newsletter').scrollIntoView({behavior: 'smooth'});">
             <span id="countdown-timer">Noch ... bis zum Launch</span>
@@ -114,15 +114,15 @@
 
 
     
-<section class="hero legal-hero text-white position-relative">
+<section class="hero legal-hero position-relative" style="background-color: var(--background-dark);">
     <div class="hero-overlay"></div>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="legal-hero-content text-center">
-                    <h1 class="hero-title">Datenschutz</h1>
+                    <h1 class="hero-title" style="color: var(--text-dark);">Datenschutz</h1>
                     
-                    <p class="hero-subtitle">Deine Daten sind bei uns sicher</p>
+                    <p class="hero-subtitle" style="color: var(--text-muted);">Deine Daten sind bei uns sicher</p>
                     
                 </div>
             </div>
@@ -134,7 +134,7 @@
 </section>
 
 
-<section class="legal-content py-5">
+<section class="legal-content py-5" style="background-color: var(--background-dark); color: var(--text-dark);">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -292,7 +292,7 @@ Telefon: +49 (0) 15222 985887</p>
     height: 100%;
     background-size: cover;
     background-position: center 50%; /* Slightly shift towards bottom, but not too far */
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: 1;
 }
 
@@ -303,10 +303,10 @@ Telefon: +49 (0) 15222 985887</p>
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, 
-        rgba(18, 18, 18, 1) 0%, 
-        rgba(18, 18, 18, 0.9) 30%, 
-        rgba(18, 18, 18, 0.7) 50%, 
-        rgba(152, 197, 95, 0.1) 100%
+        rgba(248, 240, 227, 1) 0%, 
+        rgba(248, 240, 227, 0.9) 30%, 
+        rgba(248, 240, 227, 0.7) 50%, 
+        rgba(167, 207, 104, 0.1) 100%
     );
     z-index: 2;
 }
@@ -329,48 +329,49 @@ Telefon: +49 (0) 15222 985887</p>
 }
 
 .legal-content {
-    background-color: var(--background-dark);
-    color: var(--text-light);
+    background-color: var(--background-lighter);
+    color: var(--text-dark);
 }
 
 .legal-article h1, 
 .legal-article h2, 
 .legal-article h3 {
-    color: var(--primary-light);
+    color: var(--primary-green);
     margin-bottom: 1rem;
 }
 
 .legal-article p {
     margin-bottom: 1rem;
     line-height: 1.6;
+    color: var(--text-dark);
 }
 </style>
 
-    <section id="newsletter" class="py-5">
+    <section id="newsletter" class="py-5" style="background-color: var(--accent-brown);">
     <div class="container">
-        <h2 class="text-center mb-5">Mach mit!</h2>
+        <h2 class="text-center mb-5" style="color: var(--text-dark);">Mach mit!</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="custom-dark-card">
-                    <h3 class="mb-4">Sei von Anfang an dabei!</h3>
-                    <div id="success-message" class="alert alert-success alert-dismissible fade" role="alert" style="display: none;">
+                <div class="custom-dark-card" style="background-color: var(--background-light); border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                    <h3 class="mb-4" style="color: var(--primary-dark);">Sei von Anfang an dabei!</h3>
+                    <div id="success-message" class="alert alert-success alert-dismissible fade" role="alert" style="display: none; background-color: rgba(167, 207, 104, 0.2); border-color: var(--primary-green); color: var(--text-dark);">
                         <strong>Vielen Dank!</strong> Wir halten dich auf dem Laufenden. 🐱
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <form id="signup-form" method="POST" action="https://script.google.com/macros/s/AKfycbz684ajMaR19PfcsvACNop3R3SYLBmXr5HCXo0RXqCSssihLRf3etfKK7IEmqi8BMzvUg/exec" target="hidden_iframe" onsubmit="submitted=true;">
                         <div class="mb-3">
-                            <label for="email" class="form-label">E-Mail-Adresse</label>
+                            <label for="email" class="form-label" style="color: var(--text-dark);">E-Mail-Adresse</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="beta-tester" name="beta-tester">
-                            <label class="form-check-label" for="beta-tester">Ich möchte Beta-Tester werden</label>
+                            <input type="checkbox" class="form-check-input" id="beta-tester" name="beta-tester" style="border-color: var(--primary-green);">
+                            <label class="form-check-label" for="beta-tester" style="color: var(--text-dark);">Ich möchte Beta-Tester werden</label>
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter">
-                            <label class="form-check-label" for="newsletter">Ich möchte den Newsletter erhalten</label>
+                            <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" style="border-color: var(--primary-green);">
+                            <label class="form-check-label" for="newsletter" style="color: var(--text-dark);">Ich möchte den Newsletter erhalten</label>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Benachrichtige mich beim Launch</button>
+                        <button type="submit" class="btn btn-primary w-100" style="background-color: var(--primary-green); border-color: var(--primary-green); border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">Benachrichtige mich beim Launch</button>
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
                 </div>
@@ -387,7 +388,7 @@ Telefon: +49 (0) 15222 985887</p>
         <div class="row">
             <div class="col-md-4">
                 <div class="footer-brand d-flex align-items-center">
-                    <img src="/assets/MietzekaterIconTransparent-64x64.webp" alt="Mietzekater Logo" class="footer-logo me-3" style="height: 50px; width: auto;">
+                    <img src="/assets/Mietzekater-paw-dark.png" alt="Mietzekater Logo" class="footer-logo me-3" style="height: 55px; width: auto;">
                     <div>
                         <h4 class="mb-0">Mietzekater</h4>
                         <p class="mb-0">Leihen, Teilen, Sparen in deiner Nachbarschaft</p>
@@ -406,24 +407,23 @@ Telefon: +49 (0) 15222 985887</p>
             </div>
             <div class="col-md-4">
                 <h5>Du hast ein Anliegen? Sag Hallo : )</h5>
-                <i class="fas fa-envelope"></i> <a href="mailto:hi@mietzekater.de" class="text-white text-decoration-none">hi@mietzekater.de</a>
+                <i class="fas fa-envelope"></i> <a href="mailto:hi@mietzekater.de">hi@mietzekater.de</a>
             </div>
             <div class="col-md-4">
                 <div style="display: flex; align-items: center; gap: 15px;">
                     <a href="https://www.aachen.digital/" target="_blank">
                         <img src="/assets/footer/hub-badge_black_de_wir sind dabei.webp" alt="Wir sind dabei bei Aachen Digital" class="hub-badge" style="width: 150px;">
                     </a>
-                    <div style="background: #f8f9fa; padding: 10px;">
-                        <a href="https://gruendungszentrum.fh-aachen.de/" target="_blank">
-                            <img src="/assets/footer/GZ - FH Aachen.png" alt="Gründungszentrum FH Aachen" class="gz-logo" style="width: 120px;">
-                        </a>
-                    </div>
+                    <div style="display: flex; gap: 60px;"></div>
+                    <a href="https://gruendungszentrum.fh-aachen.de/" target="_blank">
+                        <img src="/assets/footer/GZ - FH Aachen.png" alt="Gründungszentrum FH Aachen" class="gz-logo" style="width: 200px;">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="footer-social text-center mb-4">
-            <a href="https://www.tiktok.com/@simon_vincent01" target="_blank" class="social-icon" style="font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/simon_und_vincent" target="_blank" class="social-icon" style="font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@simon_vincent01" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/simon_und_vincent" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="footer-bottom text-center">
             <p>&copy; 2025 Mietzekater. Alle Rechte vorbehalten.</p>

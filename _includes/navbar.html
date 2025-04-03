@@ -1,33 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-dark py-3">
+<nav class="navbar navbar-expand-lg py-3" style="background-color: var(--background-dark);">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="/">
-            <img src="/assets/MietzekaterIconTransparent-64x64.webp" alt="Mietzekater Logo" class="logo-img" style="height: 40px; width: auto;">
-            <span class="ms-2 d-none d-sm-inline">Mietzekater  -  Gemeinsam Mieten</span>
-            <span class="ms-2 d-sm-none">Mietzekater</span>
+            <img src="/assets/Mietzekater-paw-dark.png" alt="Mietzekater Logo" class="me-2" style="height: 60px; width: auto;">
+            <span class="ms-2 d-none d-sm-inline" style="color: var(--text-dark); font-weight: 600;">Mietzekater  -  Gemeinsam Mieten</span>
+            <span class="ms-2 d-sm-none" style="color: var(--text-dark); font-weight: 600;">Mietzekater</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" style="border-color: var(--primary-green);">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link px-3" href="/#categories">Kategorien</a>
+                    <a class="nav-link px-3" href="/#categories" style="color: var(--text-dark);">Kategorien</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/">Blog</a>
+                    <a class="nav-link px-3" href="/blog/" style="color: var(--text-dark);">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/">Vermieten</a>
+                    <a class="nav-link px-3" href="/blog/wie-du-mit-mietzekater-geld-verdienst/" style="color: var(--text-dark);">Vermieten</a>
                 </li>
                 <li class="nav-item cta-nav-item">
-                    <a class="nav-link btn btn-outline-light px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
+                    <a class="nav-link btn btn-primary px-4 mt-2 mt-lg-0" href="#newsletter">Mitmachen</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 {% unless page.url == "/umfrage" or page.url == "/umfrage/" %}
-<div class="bg-primary text-white text-center py-2">
+<div class="bg-primary text-white text-center py-2" style="background-color: var(--primary-green) !important;">
     <div class="container">
         <a href="#newsletter" class="text-white text-decoration-none" onclick="event.preventDefault(); document.getElementById('newsletter').scrollIntoView({behavior: 'smooth'});">
             <span id="countdown-timer">Noch ... bis zum Launch</span>
