@@ -10,14 +10,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:title" content="{{ page.title }} | Mietzekater">
+    <meta property="og:title" content="{{ page.title | default: 'Lokal Mieten' }} | Mietzekater">
     <meta property="og:description" content="{{ meta_description }}">
     <meta property="og:image" content="{{ site.url }}{{ meta_image }}">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="twitter:title" content="{{ page.title }} | Mietzekater">
+    <meta property="twitter:title" content="{{ page.title | default: 'Lokal Mieten' }} | Mietzekater">
     <meta property="twitter:description" content="{{ meta_description }}">
     <meta property="twitter:image" content="{{ site.url }}{{ meta_image }}">
     
@@ -27,7 +27,7 @@
     <!-- Discord Embed -->
     <meta name="theme-color" content="#75A33D">
     
-    <title>{{ page.title }} | Mietzekater</title>
+    <title>{{ page.title | default: 'mieten in aachen' }} | Mietzekater</title>
     
     {{ content_for_head }}
     
