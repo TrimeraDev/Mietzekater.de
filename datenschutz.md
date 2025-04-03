@@ -8,7 +8,7 @@ hero_image: /assets/legal/data-protection-hero.webp
 ### Datenschutzerklärung für Mietzekater.de
 
 #### Verantwortliche
-**Simon & Vincent UG (haftungsbeschränkt, in gründung)**  
+**Simon & Vincent UG (haftungsbeschränkt)**  
 Datenschutzbeauftragter: Vincent Schulz
 Adresse: Paulusstraße 6, 52064 Aachen  
 E-Mail: hi@mietzekater.de 
@@ -105,4 +105,4 @@ Diese Datenschutzerklärung kann von Zeit zu Zeit aktualisiert werden, um gesetz
 
 Falls Du Fragen oder Bedenken zu dieser Datenschutzerklärung haben, kontaktiere uns bitte unter den angegebenen Kontaktinformationen. 
 
-Datum der letzten Aktualisierung: Februar 2025
+Datum der letzten Aktualisierung: April 2025

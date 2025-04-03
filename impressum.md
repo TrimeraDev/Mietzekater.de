@@ -9,17 +9,24 @@ hero_image: /assets/legal/data-protection-hero.webp
 
 ## Verantwortliche für Mietzekater.de
 
-Simon & Vincent UG (haftungsbeschränkt, in gründung)
+Simon & Vincent UG (haftungsbeschränkt)
+
+**Register Eintrag:**
+HRB 28624 B
+Amtsgericht Aachen
 
 ### Kontaktinformationen
-
-**Name:** Vincent Schulz & Simon Bilecen
 
 **E-Mail:** hi@mietzekater.de
 
 **Adresse:** Paulusstraße 6, 52064 Aachen, Deutschland
 
 **Telefon:** +49 (0) 15222 985887
+
+**Register Eintrag:**
+HRB 28624 B
+Amtsgericht Aachen
+Vertreten durch Vincent Schulz & Simon Bilecen
 
 ### Haftungsausschluss
 
@@ -30,4 +37,4 @@ Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber ver
 
 Wir sind derzeit nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
-*Stand: März 2025*
+*Stand: April 2025*
