@@ -1,13 +1,13 @@
 :root {
-    --primary-green: #75A33D;
-    --primary-dark: #4C6B28;
-    --primary-light: #8DBB4F;
+    --primary-green: #5E8A2A;
+    --primary-dark: #41621D;
+    --primary-light: #75A33D;
     --background-dark: #F8F0E3;
     --background-darker: #EFE5D4;
     --background-light: #FFFFFF;
     --text-dark: #2D2D2D;
     --text-light: #2D2D2D;
-    --text-muted: #595959;
+    --text-muted: #505050;
     --off-white: #F9F9F9;
     --off-white-text: #2D2D2D;
 
@@ -182,6 +182,28 @@ body {
     line-height: 1.6;
     margin-bottom: 2rem;
     color: var(--text-dark);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--text-dark);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    color: var(--text-dark);
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    position: absolute;
+    width: 130px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 .hero-features {
@@ -459,8 +481,8 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-green);
-    border-color: var(--primary-green);
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
     border-radius: 12px;
     padding: 12px 24px;
     font-weight: 600;
@@ -472,10 +494,21 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-light);
-    border-color: var(--primary-light);
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Countdown timer styling */
+#countdown-timer {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.bg-primary {
+    background-color: var(--primary-dark) !important;
 }
 
 .form-control {
@@ -1063,22 +1096,22 @@ footer a:hover {
 
 /* Footer Styling - Light Mode */
 .footer {
-    background-color: var(--background-darker); /* Light background */
+    background-color: var(--background-darker);
     padding: 3rem 0;
-    color: var(--text-muted); /* Default text color */
+    color: var(--text-dark);
 }
 
 .footer h4, .footer h5 {
-    color: var(--text-dark); /* Darker headings */
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
 .footer p {
-    color: var(--text-muted); /* Muted paragraph text */
+    color: var(--text-dark);
 }
 
 .footer .footer-brand p {
-    color: var(--text-muted); /* Specific color for slogan */
+    color: var(--text-dark);
 }
 
 .footer .footer-links {
@@ -1091,32 +1124,37 @@ footer a:hover {
 }
 
 .footer a {
-    color: var(--text-dark); /* Dark text for links */
-    text-decoration: none;
+    color: var(--text-dark);
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-.footer a:hover {
-    color: var(--primary-green); /* Primary color on hover */
-    text-decoration: none;
+a[href^="mailto"] {
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+a[href^="mailto"]:hover {
+    color: var(--text-dark);
 }
 
 .footer .fa-envelope {
-    color: var(--primary-green); /* Primary color for mail icon */
+    color: var(--primary-dark);
     margin-right: 0.5rem;
-    font-size: 1.2rem; /* Slightly larger */
+    font-size: 1.2rem;
 }
 
 .footer .footer-social .social-icon {
-    font-size: 1.8rem; /* Larger social icons */
-    margin: 0 15px; /* Increased spacing */
-    color: var(--primary-green); /* Primary color */
+    font-size: 1.8rem;
+    margin: 0 15px;
+    color: var(--primary-dark);
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer .footer-social .social-icon:hover {
-    color: var(--primary-dark); /* Darker primary on hover */
-    transform: scale(1.1); /* Slight scale effect on hover */
+    color: var(--text-dark);
+    transform: scale(1.1);
 }
 
 .footer .footer-bottom {
@@ -1126,16 +1164,17 @@ footer a:hover {
 }
 
 .footer .footer-bottom p {
-    color: var(--text-muted);
+    color: var(--text-dark);
     margin-bottom: 0.5rem;
 }
 
 .footer .footer-legal-links a {
-    color: var(--text-muted); /* Muted color for legal links */
+    color: var(--text-dark);
     margin: 0 10px;
     font-size: 0.9rem;
 }
 
 .footer .footer-legal-links a:hover {
-    color: var(--primary-green); /* Primary color on hover */
+    color: var(--primary-dark);
+    text-decoration: underline;
 }
