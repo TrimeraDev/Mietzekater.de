@@ -6,6 +6,7 @@
     
     {% assign meta_description = page.meta_description | default: page.description | default: site.description %}
     {% assign meta_image = page.hero_image | default: '/assets/categories/mietzekater-werkzeuge.webp' %}
+    {% assign title = page.title | default: 'Lokal Mieten' %}
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
