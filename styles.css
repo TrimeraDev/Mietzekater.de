@@ -1,3 +1,6 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap');
+
 :root {
     --primary-green: #5E8A2A;
     --primary-dark: #41621D;
@@ -15,6 +18,11 @@
 
     --input-fill-light: #FFFFFF;
     --input-fill-dark: #F5F5F5;
+    
+    /* Typography */
+    --heading-font: 'Quicksand', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --accent-font: 'Caveat', cursive;
 }
 
 * {
@@ -22,7 +30,7 @@
 }
 
 body {
-    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: var(--body-font);
     color: var(--text-dark);
     background-color: var(--background-dark);
     line-height: 1.6;
@@ -168,16 +176,18 @@ body {
 }
 
 .hero-title {
+    font-family: var(--heading-font);
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1.5rem;
-    background: linear-gradient(120deg, var(--primary-dark), var(--text-dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-dark);
+    position: relative;
+    display: inline-block;
 }
 
 .hero-subtitle {
+    font-family: var(--body-font);
     font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -267,11 +277,11 @@ body {
 
 .feature-card {
     background-color: var(--background-light);
-    border-radius: 16px;
+    border-radius: 20px;
     border: 1px solid rgba(167, 207, 104, 0.2);
     box-shadow: 
-        0 8px 16px rgba(0,0,0,0.05), 
-        0 4px 8px rgba(0,0,0,0.02),
+        0 10px 20px rgba(0,0,0,0.04), 
+        0 6px 10px rgba(0,0,0,0.02),
         inset 0 2px 4px rgba(255,255,255,0.8);
     padding: 30px;
     margin-bottom: 30px;
@@ -310,8 +320,10 @@ body {
 }
 
 .feature-card h3 {
-    color: var(--text-light);
+    font-family: var(--heading-font);
+    color: var(--text-dark);
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 .feature-card:hover h3 {
@@ -319,10 +331,13 @@ body {
 }
 
 .feature-card p {
-    color: var(--text-muted);
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    line-height: 1.6;
 }
 
 .feature-icon {
+    font-family: var(--accent-font);
     font-size: 3.5rem;
     color: var(--primary-green);
     margin-bottom: 20px;
@@ -333,11 +348,11 @@ body {
 
 .card {
     background-color: var(--background-light);
-    border-radius: 16px;
+    border-radius: 20px;
     border: 1px solid rgba(167, 207, 104, 0.2);
     box-shadow: 
-        0 8px 16px rgba(0,0,0,0.05), 
-        0 4px 8px rgba(0,0,0,0.02),
+        0 10px 20px rgba(0,0,0,0.04), 
+        0 6px 10px rgba(0,0,0,0.02),
         inset 0 2px 4px rgba(255,255,255,0.8);
     padding: 30px;
     margin-bottom: 30px;
@@ -480,17 +495,26 @@ body {
     border-color: var(--primary-light);
 }
 
+.btn {
+    border-radius: 16px;
+    font-family: var(--heading-font);
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .btn-primary {
     background-color: var(--primary-dark);
     border-color: var(--primary-dark);
-    border-radius: 12px;
-    padding: 12px 24px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.4s ease;
     color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .btn-primary:hover {
@@ -504,7 +528,32 @@ body {
 #countdown-timer {
     color: #FFFFFF;
     font-weight: 600;
+    font-family: var(--heading-font);
     text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Section title styling with watercolor underline effect */
+h2.section-title, .section-title {
+    font-family: var(--heading-font);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--primary-dark);
+    z-index: 1;
+}
+
+h2.section-title::after, .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, 
+        rgba(117, 163, 61, 0.6) 0%, 
+        rgba(117, 163, 61, 0.2) 100%);
+    border-radius: 4px;
+    z-index: -1;
 }
 
 .bg-primary {
@@ -703,16 +752,29 @@ section {
     padding-left: 50px;
 }
 
+.timeline-cont.feature-card {
+    padding: 1.5rem;
+    border-radius: 18px;
+    background-color: var(--background-light);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.04), 0 4px 8px rgba(0,0,0,0.02);
+    transition: all 0.4s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    color: var(--text-dark);
+    border: 1px solid rgba(117, 163, 61, 0.1);
+}
+
 .timeline-content {
     position: relative;
-    padding: 20px;
+    padding: 24px;
     background: var(--background-light);
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    border-radius: 18px;
+    border: 1px solid rgba(167, 207, 104, 0.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
     transition: transform 0.3s ease;
     cursor: pointer;
     overflow: hidden;
-    width: 100%;
 }
 
 .timeline-content .timeline-image {
@@ -732,14 +794,14 @@ section {
 
 .timeline-point {
     position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: var(--background-dark);
-    border: 3px solid var(--primary-green);
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    z-index: 2;
-    transform: translateY(-50%);
+    background-color: var(--primary-dark);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    top: 25px;
+    z-index: 1;
 }
 
 .timeline-date {
