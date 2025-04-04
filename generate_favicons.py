@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 # Input and output paths
-input_image = 'assets/MietzekaterIcon.webp'
+input_image = 'assets/Mietzekater-paw-dark.png'
 output_dir = 'assets/favicons'
 
 # Create output directory if it doesn't exist

@@ -141,9 +141,8 @@
     z-index: 0;
 }
 
-/* Fade effect for both category and blog hero images */
-.category-hero-image::before,
-.blog-hero .category-hero-image::before {
+/* Fade effect for category hero images - desktop only */
+.category-hero-image::before {
     content: '';
     position: absolute;
     top: 0;
@@ -156,6 +155,13 @@
         transparent 100%
     );
     z-index: 3;
+}
+
+/* Remove fade effect for mobile */
+@media (max-width: 992px) {
+    .category-hero-image::before {
+        display: none;
+    }
 }
 
 .category-hero-image .image-wrapper::before {
@@ -514,17 +520,7 @@
         height: 200px; /* Banner height */
         z-index: 0;
     }
-    .blog-hero-image::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9) 80%);
-        pointer-events: none; /* Allow interactions with content beneath */
-        z-index: 2; /* Ensure the overlay appears above the image */
-    }
+    /* Removed blog hero image gradient for mobile */
 }
 
 /* Mobile Responsiveness Improvements */
