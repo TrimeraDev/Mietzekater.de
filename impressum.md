@@ -11,10 +11,6 @@ hero_image: /assets/legal/data-protection-hero.webp
 
 Simon & Vincent UG (haftungsbeschränkt)
 
-**Register Eintrag:**
-HRB 28624 B
-Amtsgericht Aachen
-
 ### Kontaktinformationen
 
 **E-Mail:** hi@mietzekater.de

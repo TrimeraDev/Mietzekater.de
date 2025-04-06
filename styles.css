@@ -1125,6 +1125,22 @@ footer a:hover {
     background-color: var(--primary-dark);
 }
 
+/* Partner Logos */
+.partner-logo {
+    height: 80px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.partner-link {
+    display: inline-block;
+    text-align: center;
+}
+
+.partner-link:hover .partner-logo {
+    transform: translateY(-5px);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .blog-post {
@@ -1142,6 +1158,22 @@ footer a:hover {
 
     .blog-post h3 {
         font-size: 1.2rem;
+    }
+    
+    .partner-logo {
+        height: 80px;
+    }
+    
+    .partner-container {
+        margin-top: 1.5rem;
+    }
+    
+    .hero-features {
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
     }
 }
 
