@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Refreshing Mietzekater Session</title>
+    <script>
+        window.onload = function () {
+            // Try to open the app
+            window.location.href = 'mietzekater://stripe/refresh' + window.location.search;
+
+            // If the app doesn't open after 2 seconds, redirect to the app store
+            setTimeout(function () {
+                // For Android
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
+                // For iOS, you would use the App Store link
+                // window.location.href = 'https://apps.apple.com/app/mietzekater/id...';
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Returning to Mietzekater...</h1>
+    <p>If you're not automatically redirected, <a href="mietzekater://stripe/refresh">click here</a>.</p>
+</body>
+</html>
