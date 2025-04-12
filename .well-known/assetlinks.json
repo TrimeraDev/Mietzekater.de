@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.simonandvincent.mietzekater",
+      "sha256_cert_fingerprints": [" EF:C2:E4:D7:34:C3:C3:DD:4F:DB:22:5B:22:BF:36:F0:9C:DD:6A:04:42:8E:5F:1E:5A:B7:04:5A:A0:48:C3:5A"]
+    }
+  }]

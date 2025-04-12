@@ -4,21 +4,39 @@
     <title>Returning to Mietzekater</title>
     <script>
         window.onload = function() {
-            // Try to open the app
-            window.location.href = 'mietzekater://stripe/return' + window.location.search;
+            // Try to open the app with both URL schemes
+            var fallbackTimer;
+            
+            function tryOpenApp() {
+                // Try the first URL scheme
+                window.location.href = 'mietzekater://stripe/return' + window.location.search;
+                
+                // Try the second URL scheme after a short delay
+                setTimeout(function() {
+                    window.location.href = 'com.simonandvincent.mietzekater://stripe/return' + window.location.search;
+                }, 500);
 
-            // If the app doesn't open after 2 seconds, redirect to the app store
-            setTimeout(function() {
+                // Set fallback timer for app store
+                fallbackTimer = setTimeout(openAppStore, 2000);
+            }
+
+            function openAppStore() {
                 // For Android
-                window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
-                // For iOS, you would use the App Store link
-                // window.location.href = 'https://apps.apple.com/app/mietzekater/id...';
-            }, 2000);
+                if (/android/i.test(navigator.userAgent)) {
+                    window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
+                }
+                // For iOS
+                else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
+                    window.location.href = 'https://apps.apple.com/app/mietzekater/id...';
+                }
+            }
+
+            tryOpenApp();
         }
     </script>
 </head>
 <body>
     <h1>Returning to Mietzekater...</h1>
-    <p>If you're not automatically redirected, <a href="mietzekater://stripe/return">click here</a>.</p>
+    <p>If you are not automatically redirected, please click <a href="https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater">here</a> to download the app.</p>
 </body>
 </html>
