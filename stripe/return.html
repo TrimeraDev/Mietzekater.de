@@ -2,41 +2,67 @@
 <html>
 <head>
     <title>Returning to Mietzekater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
     <script>
         window.onload = function() {
-            // Try to open the app with both URL schemes
-            var fallbackTimer;
+            // Try HTTPS first (App Links)
+            window.location.href = 'https://mietzekater.de/stripe/return' + window.location.search;
             
-            function tryOpenApp() {
-                // Try the first URL scheme
+            // After a short delay, try custom scheme
+            setTimeout(function() {
                 window.location.href = 'mietzekater://stripe/return' + window.location.search;
-                
-                // Try the second URL scheme after a short delay
-                setTimeout(function() {
-                    window.location.href = 'com.simonandvincent.mietzekater://stripe/return' + window.location.search;
-                }, 500);
-
-                // Set fallback timer for app store
-                fallbackTimer = setTimeout(openAppStore, 2000);
-            }
-
-            function openAppStore() {
-                // For Android
-                if (/android/i.test(navigator.userAgent)) {
-                    window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
-                }
-                // For iOS
-                else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) {
-                    window.location.href = 'https://apps.apple.com/app/mietzekater/id...';
-                }
-            }
-
-            tryOpenApp();
+            }, 1000);
+            
+            // If neither works, redirect to store after 2 seconds
+            setTimeout(function() {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
+            }, 2000);
         }
     </script>
 </head>
 <body>
+    <div class="spinner"></div>
     <h1>Returning to Mietzekater...</h1>
-    <p>If you are not automatically redirected, please click <a href="https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater">here</a> to download the app.</p>
+    <p>Opening app... If you're not automatically redirected, <a href="mietzekater://stripe/return">click here</a> or <a href="https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater">download the app</a>.</p>
 </body>
 </html>
