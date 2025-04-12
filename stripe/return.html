@@ -45,18 +45,37 @@
     </style>
     <script>
         window.onload = function() {
-            // Try HTTPS first (App Links)
-            window.location.href = 'https://mietzekater.de/stripe/return' + window.location.search;
+            console.log('Attempting to return to Mietzekater app...');
             
-            // After a short delay, try custom scheme
-            setTimeout(function() {
-                window.location.href = 'mietzekater://stripe/return' + window.location.search;
-            }, 1000);
-            
-            // If neither works, redirect to store after 2 seconds
-            setTimeout(function() {
-                window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
-            }, 2000);
+            // Check if we're in a browser context
+            if (typeof window !== 'undefined' && window.location) {
+                // Try HTTPS first (App Links)
+                try {
+                    window.location.href = 'https://mietzekater.de/stripe/return' + window.location.search;
+                } catch (e) {
+                    console.error('Error trying App Links:', e);
+                }
+                
+                // After a short delay, try custom scheme
+                setTimeout(function() {
+                    try {
+                        window.location.href = 'mietzekater://stripe/return' + window.location.search;
+                    } catch (e) {
+                        console.error('Error trying custom scheme:', e);
+                    }
+                }, 1000);
+                
+                // If neither works, redirect to store after 2 seconds
+                setTimeout(function() {
+                    try {
+                        window.location.href = 'https://play.google.com/store/apps/details?id=com.simonandvincent.mietzekater';
+                    } catch (e) {
+                        console.error('Error trying app store redirect:', e);
+                    }
+                }, 2000);
+            } else {
+                console.log('Not in a browser context');
+            }
         }
     </script>
 </head>
