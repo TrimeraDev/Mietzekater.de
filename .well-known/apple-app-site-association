@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "92ACH4U6N7.com.simon-vincent.mietzekater",
+        "paths": ["/reset-password", "/reset-password?*"]
+      }
+    ]
+  }
+}
