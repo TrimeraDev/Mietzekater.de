@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zahlung abgebrochen – Mietzekater</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 10vh; }
+    .btn { background: #4B5563; color: #fff; padding: 12px 32px; border: none; border-radius: 6px; font-size: 1.2em; cursor: pointer; margin-top: 2em; }
+  </style>
+  <script>
+    window.onload = function() {
+      if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location = "mietzekater://stripe/payment/cancel";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Zahlung abgebrochen</h1>
+  <p>Du hast die Zahlung abgebrochen. Du kannst es erneut versuchen oder zur App zurückkehren.</p>
+  <button class="btn" onclick="window.location='mietzekater://stripe/payment/cancel'">Zurück zur App</button>
+  <p style="margin-top:2em;"><a href="[https://mietzekater.de](https://mietzekater.de)">Zur Startseite</a></p>
+</body>
+</html>

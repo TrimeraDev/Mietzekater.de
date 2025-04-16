@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Zahlung erfolgreich – Mietzekater</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: sans-serif; text-align: center; margin-top: 10vh; }
+    .btn { background: #4F46E5; color: #fff; padding: 12px 32px; border: none; border-radius: 6px; font-size: 1.2em; cursor: pointer; margin-top: 2em; }
+  </style>
+  <!-- Optional: Auto-redirect for mobile deep link -->
+  <script>
+    // Try to open the app via deep link on mobile
+    window.onload = function() {
+      if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        window.location = "mietzekater://stripe/payment/success";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Vielen Dank für deine Zahlung!</h1>
+  <p>Deine Buchung war erfolgreich. Du kannst jetzt zur App zurückkehren.</p>
+  <button class="btn" onclick="window.location='mietzekater://stripe/payment/success'">Zurück zur App</button>
+  <p style="margin-top:2em;"><a href="[https://mietzekater.de](https://mietzekater.de)">Zur Startseite</a></p>
+</body>
+</html>
