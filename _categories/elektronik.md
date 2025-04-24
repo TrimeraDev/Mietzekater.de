@@ -1,33 +1,33 @@
 ---
 layout: category
-title: Elektronik
-slug: elektronik
-description: Moderne Elektronik von Nachbarn zu fairen Preisen
-meta_description: "Elektronik günstig mieten in Aachen ✓ Kameras ✓ Drohnen ✓ Gaming Equipment und mehr. Finde hochwertige Elektronik zum Ausleihen in deiner Nachbarschaft mit Mietzekater."
-meta_keywords: "Elektronik mieten Aachen, Kamera leihen Aachen, Drohne mieten Aachen, Gaming Equipment, Elektronik ausleihen, günstige Elektronik, lokaler Verleih Aachen"
-hero_image: /assets/categories/mietzekater-elektronik.webp
+title: Technik
+slug: technik
+description: Entdecke moderne Technik und Geräte zum Mieten in Aachen und Umgebung
+meta_description: "Technik günstig mieten in Aachen ✓ Kameras ✓ Drohnen ✓ Werkzeuge und mehr. Entdecke innovative Technik in deiner Nachbarschaft mit Mietzekater."
+meta_keywords: "Technik mieten Aachen, Kamera mieten Aachen, Drohne ausleihen, Gaming Equipment, Elektronik Geräte, lokaler Verleih Aachen"
+hero_image: /assets/categories/new/Technik.webp
 
 # Thought-provoking Questions
-renter_question: "Brauchst du Elektronik für ein einmaliges Projekt oder kurzzeitig?"
-lender_question: "Teure Anschaffung? Lass deine Elektronik für dich arbeiten!"
+renter_question: "Brauchst du Technik für ein einmaliges Projekt oder kurzzeitig?"
+lender_question: "Teure Anschaffung? Lass deine Technik für dich arbeiten!"
 
 # Value Propositions
 renter_benefits:
   - emoji: 💰
     title: Kostengünstig
-    description: Spare bis zu 75% im Vergleich zum Neukauf von Elektronikgeräten
+    description: Spare bis zu 75% im Vergleich zum Neukauf von Technikgeräten
   - emoji: 🔬
     title: Neueste Technologie
     description: Teste aktuelle Geräte ohne hohe Investitionskosten
   - emoji: 🌈
     title: Vielfältig
-    description: Finde genau die Elektronik, die du für dein Projekt brauchst
+    description: Finde genau die Technik, die du für dein Projekt brauchst
   - emoji: 🌍
     title: Nachhaltig
     description: Reduziere elektronischen Abfall durch intelligentes Teilen
   - emoji: 🤝
     title: Einfach
-    description: Miete Elektronik in wenigen Klicks, direkt aus deiner Nachbarschaft
+    description: Miete Technik in wenigen Klicks, direkt aus deiner Nachbarschaft
 
 lender_benefits:
   - emoji: 💵
@@ -35,25 +35,25 @@ lender_benefits:
     description: Verdiene Geld mit Geräten, die sonst ungenutzt herumstehen
   - emoji: 🤲
     title: Community-Gedanke
-    description: Hilf anderen, Zugang zu hochwertiger Elektronik zu haben
+    description: Hilf anderen, Zugang zu hochwertiger Technik zu haben
   - emoji: 🕒
     title: Flexibel
     description: Entscheide selbst über Verfügbarkeit deiner Geräte
   - emoji: 🛡️
     title: Sicherheit
-    description: Vollständiger Versicherungsschutz für deine Elektronik
+    description: Vollständiger Versicherungsschutz für deine Technik
   - emoji: 📈
     title: Werterhalt
     description: Halte deine Geräte durch regelmäßige Nutzung in Schuss
 
 # Short description for related categories section
-short_description: "Elektronik für jeden Bedarf - von Arbeit bis Gaming"
+short_description: "Technik für jeden Bedarf - von Arbeit bis Gaming"
 
 # Potential Items (currently empty as platform isn't live)
 items: []
 ---
 
-## Wie du Mietzekater für Elektronik nutzen kannst
+## Wie du Mietzekater für Technik nutzen kannst
 
 <div class="use-cases-grid">
   <div class="use-case-card">
@@ -87,4 +87,4 @@ items: []
   </div>
 </div>
 
-Mietzekater macht das Ausleihen von Elektronik so einfach wie nie zuvor. Spare Geld, nutze neueste Technologie und teile Ressourcen in deiner Nachbarschaft.
+Mietzekater macht das Ausleihen von Technik so einfach wie nie zuvor. Spare Geld, nutze neueste Technologie und teile Ressourcen in deiner Nachbarschaft.
