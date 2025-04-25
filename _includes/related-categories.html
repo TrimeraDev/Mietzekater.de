@@ -29,7 +29,9 @@
                 <div class="col-md-4 mb-3">
                     <a href="{{ category.url }}" class="text-decoration-none">
                         <div class="card category-card" style="border-radius: 16px; overflow: hidden; box-shadow: 0 8px 16px rgba(0,0,0,0.05); border: 1px solid rgba(167, 207, 104, 0.2);">
-                            <img src="{{ category.hero_image }}" alt="{{ category.title }} Category" class="card-img-top" loading="lazy" decoding="async">
+                            <div class="category-img-wrapper">
+                                <img src="{{ category.hero_image }}" alt="{{ category.title }} Category" class="card-img-top" loading="lazy" decoding="async">
+                            </div>
                             <div class="card-body">
                                 <h3 class="card-title" style="color: var(--primary-dark);">{{ category.title }}</h3>
                                 <p class="card-text" style="color: var(--text-muted);">{{ category.short_description }}</p>
