@@ -9,7 +9,11 @@ meta_keywords: {{ page.meta_keywords | default: page.title }}
 <section class="hero category-hero py-5 position-relative" style="background-color: var(--background-dark);">
     <div class="category-hero-image">
         <div class="image-wrapper h-100">
-            <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image" style="opacity: 1; object-fit: cover; width: 100%; height: 100%;">
+            {% assign ext = page.hero_image | split: '.' | last | downcase %}
+            <picture>
+                <source srcset="{{ page.hero_image }}" type="image/{{ ext }}">
+                <img src="{{ page.hero_image }}" alt="{{ page.title }} Hero Image" class="hero-image" loading="lazy" decoding="async" style="opacity: 1; object-fit: cover; width: 100%; height: 100%;">
+            </picture>
         </div>
     </div>    <div class="container position-relative">
         <div class="row align-items-center position-relative">
