@@ -54,6 +54,7 @@ Die Verarbeitung deiner Daten erfolgt gemäß Art. 6 Abs. 1 DSGVO:
 ---
 
 #### 4. Speicherung und Löschung von Daten
+- **Kontolöschung**: Um dein Konto bei Mietzekater zu löschen, kontaktiere uns bitte unter hi@mietzekater.de. Wir werden dein Anliegen umgehend bearbeiten und alle personenbezogenen Daten, die mit deinem Konto verknüpft sind, löschen.
 - **Newsletterdaten**: Deine E-Mail-Adresse wird gespeichert, bis du dich vom Newsletter abmelden. Nach Abmeldung wird die E-Mail-Adresse gelöscht.
 - **Browserdaten**: Siehe Punkt 1c.
 
